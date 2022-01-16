@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 3417e1db16e94749a9aef910d74be7d7
     GuidInternal: 
-    m_lastTime: -8585593139698760763
+    m_lastTime: -8585593113396088207
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 61c42d8546eb8d408337bcfe97d63ff4
     GuidInternal: 
-    m_lastTime: -8585593139699276846
+    m_lastTime: -8585593113396163271
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,36 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c91726d3393f2f43a7bee2f03ef9cc29
     GuidInternal: 
-    m_lastTime: -8585593139698894767
-    List: []
+    m_lastTime: -8585593098440907623
+    List:
+    - name: Main
+      guid: 5195ceaa2c067d42a19b5ff768537778
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c91726d3393f2f43a7bee2f03ef9cc29
+      - ElementName: Main
+        ObjectType: 7
+        guid: 5195ceaa2c067d42a19b5ff768537778
+      Path: SoundBanks\Default Work Unit\Main
+    - name: ZzoggTest
+      guid: d0d6d85715d2e74397028f190e391129
+      id: 3576371722
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c91726d3393f2f43a7bee2f03ef9cc29
+      - ElementName: ZzoggTest
+        ObjectType: 7
+        guid: d0d6d85715d2e74397028f190e391129
+      Path: SoundBanks\Default Work Unit\ZzoggTest
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +108,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b20e98e79ecc0a42bcc5226751d3d401
     GuidInternal: 
-    m_lastTime: -8585593139699410606
-    List: []
+    m_lastTime: -8585593092349873335
+    List:
+    - name: Play_Test
+      guid: 393e561cc336504da93eb7069c845881
+      id: 3187507146
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b20e98e79ecc0a42bcc5226751d3d401
+      - ElementName: Play_Test
+        ObjectType: 3
+        guid: 393e561cc336504da93eb7069c845881
+      Path: Events\Default Work Unit\Play_Test
+      maxAttenuation: 0
+      maxDuration: 0.201
+      minDuration: 0.201
+    - name: Play_Test2
+      guid: 3feb3b7f4a71aa41ab5fb427ccd0c01b
+      id: 3759155916
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b20e98e79ecc0a42bcc5226751d3d401
+      - ElementName: Play_Test2
+        ObjectType: 3
+        guid: 3feb3b7f4a71aa41ab5fb427ccd0c01b
+      Path: Events\Default Work Unit\Play_Test2
+      maxAttenuation: 0
+      maxDuration: 1.648027
+      minDuration: 1.648027
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +156,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: bb7277e22ca5934a8b08e11299e02c80
     GuidInternal: 
-    m_lastTime: -8585593139699147884
+    m_lastTime: -8585593113396198301
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +170,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 4fff0bbbbd2799439642614e210bd944
     GuidInternal: 
-    m_lastTime: -8585593139699346149
+    m_lastTime: -8585593113396103210
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +184,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 3d6631e0ca9522419d564d7c40163637
     GuidInternal: 
-    m_lastTime: -8585593139699812371
+    m_lastTime: -8585593113396098213
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,11 +198,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 83159e6a52e2494e9e6fb1a07cb943fd
     GuidInternal: 
-    m_lastTime: -8585593139699604046
+    m_lastTime: -8585593113396093206
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000060000000700000008000000
+  ExpandedWaapiItemIds: 010000000200000004000000050000000600000007000000080000000a0000000b0000000c0000000d000000
   AutoSyncSelection: 0
-  autoPopulateEnabled: 1
+  autoPopulateEnabled: 0
   currentDataSource: 0
   CurrentPluginConfig: 

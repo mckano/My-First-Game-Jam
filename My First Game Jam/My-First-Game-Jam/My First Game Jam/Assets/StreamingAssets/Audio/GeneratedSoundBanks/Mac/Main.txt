@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3187507146	Play_Test			\Default Work Unit\Play_Test	
+	3759155916	Play_Test2			\Default Work Unit\Play_Test2	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	809201265	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Player\Test\Wwise Sine	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	829094000	Test2	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\wasd_block_106_click+sine-2_m_p_B96106C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Test2		13120
+

@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E7980EB2-CC9E-420A-BCC5-226751D3D401}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{E7980EB2-CC9E-420A-BCC5-226751D3D401}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E7980EB2-CC9E-420A-BCC5-226751D3D401}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Test" ID="{1C563E39-36C3-4D50-A93E-B7069C845881}">
+					<ChildrenList>
+						<Action Name="" ID="{1A201652-4895-467C-90B0-F3B6D7C7C210}" ShortID="59235957">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Test" ID="{CC441261-57FF-4C8F-973C-2F548D3B7056}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Test2" ID="{7F3BEB3F-714A-41AA-AB5F-B427CCD0C01B}">
+					<ChildrenList>
+						<Action Name="" ID="{7BEB09D3-853C-4CE8-A98B-140DDC40E10B}" ShortID="677315426">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Test2" ID="{85E01BCC-F5F5-407B-A4B7-C2ED4F2D4FCE}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Test3" ID="{4E887422-F09A-4E60-A44D-44C3B6727BDD}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

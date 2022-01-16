@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D32617C9-3F39-432F-A7BE-E2F03EF9CC29}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{D32617C9-3F39-432F-A7BE-E2F03EF9CC29}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D32617C9-3F39-432F-A7BE-E2F03EF9CC29}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{AACE9551-062C-427D-A19B-5FF768537778}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{E7980EB2-CC9E-420A-BCC5-226751D3D401}" WorkUnitID="{E7980EB2-CC9E-420A-BCC5-226751D3D401}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="ZzoggTest" ID="{57D8D6D0-D215-43E7-9702-8F190E391129}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

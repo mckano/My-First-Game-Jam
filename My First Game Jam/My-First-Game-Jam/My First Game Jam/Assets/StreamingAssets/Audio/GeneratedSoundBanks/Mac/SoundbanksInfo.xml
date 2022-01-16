@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\My-First-Game-Jam\My First Game Jam\My-First-Game-Jam\My First Game Jam\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2753853385">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3841276801">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3187507146" Name="Play_Test" ObjectPath="\Events\Default Work Unit\Play_Test" DurationType="OneShot" DurationMin="0.201000" DurationMax="0.201000"/>
+				<Event Id="3759155916" Name="Play_Test2" ObjectPath="\Events\Default Work Unit\Play_Test2" DurationType="OneShot" DurationMin="1.648027" DurationMax="1.648027">
+					<IncludedMemoryFiles>
+						<File Id="829094000" Language="SFX">
+							<ShortName>wasd_block_106_click+sine-2_m_p.wav</ShortName>
+							<Path>SFX\wasd_block_106_click+sine-2_m_p_B96106C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3576371722" Language="SFX" Hash="3219198469">
+			<ObjectPath>\SoundBanks\Default Work Unit\ZzoggTest</ObjectPath>
+			<ShortName>ZzoggTest</ShortName>
+			<Path>ZzoggTest.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
