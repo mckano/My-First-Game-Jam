@@ -5,6 +5,7 @@ using UnityEngine;
 public class OnionLayer : MonoBehaviour
 {
     public float torque;
+    public float directTransformShift;
     public Rigidbody2D rb;
 
     void Start()
@@ -14,7 +15,8 @@ public class OnionLayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        float turn = Input.GetAxis("Horizontal");
-        rb.AddTorque(-torque * turn);
+        float input = Input.GetAxis("Horizontal");
+        rb.AddTorque(-torque * input);
+        transform.position += Vector3.right * input * directTransformShift;
     }
 }
