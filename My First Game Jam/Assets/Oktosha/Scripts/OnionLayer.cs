@@ -4,8 +4,18 @@ using UnityEngine;
 
 public class OnionLayer : MonoBehaviour
 {
+    // -- Movement controls --
+
+    // controls the amount of rotation that moves the object
     public float torque;
-    public Rigidbody2D rb;
+
+    // controls the amount shift in the desired direction to get unstuck
+    // should be a small value, as the main control is done by torque
+    public float directTransformShift;
+
+    // -- End Movement controls --
+
+    private Rigidbody2D rb;
 
     void Start()
     {
@@ -14,7 +24,16 @@ public class OnionLayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        float turn = Input.GetAxis("Horizontal");
-        rb.AddTorque(-torque * turn);
+        // -- Movement --
+
+        float input = Input.GetAxis("Horizontal");
+
+        // primary way of movement -> rotate itself to roll
+        rb.AddTorque(-torque * input);
+
+        // small shift in the desired direction to get unstuck
+        transform.position += Vector3.right * input * directTransformShift;
+
+        // -- End Movement --
     }
 }
