@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class LayerController : MonoBehaviour
 {
-    int howManyLayers;
 
     public GameObject[] onionLayer;
+    public bool touchingLayer;
 
+    int howManyLayers;
     Vector3 extraLayer = new Vector3(1, 1, 0);
-
     PlayerMovement moveScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        touchingLayer = false;
         moveScript = GetComponent<PlayerMovement>();
-
         howManyLayers = 4;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        print(touchingLayer);
+        if (Input.GetKeyDown(KeyCode.E) && touchingLayer)
         {
             ReAttach();
         }
@@ -59,6 +60,7 @@ public class LayerController : MonoBehaviour
             howManyLayers += 1;
             moveScript.movementSpeed -= 25f;
             transform.localScale += extraLayer;
+            touchingLayer = false;
         }
     }
 
@@ -66,11 +68,12 @@ public class LayerController : MonoBehaviour
     {
         if(howManyLayers > 0)
         {
+            Instantiate(onionLayer[howManyLayers - 1], transform.position, transform.rotation);
+
             howManyLayers -= 1;
             moveScript.movementSpeed += 25f;
             transform.localScale -= extraLayer;
         }
 
-        Instantiate(onionLayer[howManyLayers - 1]);
     }
 }
