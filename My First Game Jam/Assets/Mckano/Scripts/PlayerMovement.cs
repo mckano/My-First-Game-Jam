@@ -26,15 +26,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            Jump();
+        Jump();
     }
 
     void Jump()
     {
-        float maxRayDistance = (transform.localScale.y / 2) + 0.1f;
+        Vector3 offsetY = new Vector3(0, (transform.localScale.y / 2) + 0.1f, 0);
 
-        if (Physics2D.Raycast(transform.position, Vector2.down, maxRayDistance))
-            rb.AddForce(new Vector2(0, jumpForce));
+        if (Input.GetKeyDown(KeyCode.Space)) 
+        {
+            if (Physics2D.Raycast(transform.position - offsetY, Vector2.down, 0.1f))
+            {
+                rb.AddForce(new Vector2(0, jumpForce));
+            }
+        }
     }
 }
