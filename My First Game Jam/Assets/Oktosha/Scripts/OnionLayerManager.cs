@@ -6,7 +6,8 @@ public class OnionLayerManager : MonoBehaviour
 {
     public int numberOfLayers;
     private OnionLayerStorage layerStorage;
-    private static float epsilonForAttachingDistance = 0.02f;
+    private static float epsilonForAttaching = 0.1f;
+    private static float epsilonForDetaching = 0.1f;
 
     private void Start()
     {
@@ -27,12 +28,24 @@ public class OnionLayerManager : MonoBehaviour
 
     private void AttemptDetach()
     {
-        if (numberOfLayers > 0 && isSpaceOnTop())
+        if (numberOfLayers > 0)
         {
-            Instantiate(layerStorage.onionLayers[numberOfLayers], transform.position, transform.rotation);
-            // TODO: calculate proper distance for outer layer to spawn exactly on top of the outer layer
-            Instantiate(layerStorage.onionPlayers[numberOfLayers - 1], transform.position + Vector3.up * 2, transform.rotation);
-            Destroy(gameObject);
+            float radius = GetComponent<CircleCollider2D>().radius;
+            float innerRadius = layerStorage.onionPlayers[numberOfLayers - 1].GetComponent<CircleCollider2D>().radius;
+            Vector3 spawnPosition = transform.position + Vector3.up * (radius + innerRadius + epsilonForDetaching);
+            Collider2D overlap = Physics2D.OverlapCircle(spawnPosition, innerRadius);
+
+            if (overlap == null)
+            {
+                Instantiate(layerStorage.onionLayers[numberOfLayers], transform.position, transform.rotation);
+                Instantiate(layerStorage.onionPlayers[numberOfLayers - 1], spawnPosition, transform.rotation);
+                Destroy(gameObject);
+            }
+            else
+            {
+                GameObject overlapGameObject = overlap.gameObject;
+                Debug.Log("Can't detach layer, the " + overlapGameObject.name + " is in the way");
+            }
         }
     }
 
@@ -45,12 +58,6 @@ public class OnionLayerManager : MonoBehaviour
             Destroy(gameObject);
             Destroy(layerToAttach);
         }
-    }
-
-    private bool isSpaceOnTop()
-    {
-        // TODO: replace with actual physics query
-        return true;
     }
 
     private GameObject FindNearestEligibleLayer()
@@ -80,7 +87,7 @@ public class OnionLayerManager : MonoBehaviour
         float distance = (transform.position - layerToAttach.transform.position).magnitude;
         float radius = GetComponent<CircleCollider2D>().radius;
         float layerToAttachRadius = layerToAttach.GetComponent<CircleCollider2D>().radius;
-        return distance < radius + layerToAttachRadius + epsilonForAttachingDistance;
+        return distance < radius + layerToAttachRadius + epsilonForAttaching;
     }
 
 }
