@@ -42,6 +42,7 @@ public class OnionLayerManager : MonoBehaviour
         {
             Instantiate(layerStorage.onionPlayers[numberOfLayers + 1], layerToAttach.transform.position, layerToAttach.transform.rotation);
             Destroy(gameObject);
+            Destroy(layerToAttach);
         }
     }
 
@@ -53,7 +54,23 @@ public class OnionLayerManager : MonoBehaviour
 
     private GameObject FindNearestEligibleLayer()
     {
-        return null;
+        GameObject[] layers = GameObject.FindGameObjectsWithTag("OnionLayer");
+        GameObject nearestEligibleLayer = null;
+        float distanceToNearestEligibleLayer = float.MaxValue;
+
+        foreach (GameObject layer in layers)
+        {
+            if (layer.GetComponent<OnionLayer>().layerSize == numberOfLayers + 1)
+            {
+                float distance = (transform.position - layer.transform.position).magnitude;
+                if (distance < distanceToNearestEligibleLayer)
+                {
+                    nearestEligibleLayer = layer;
+                    distanceToNearestEligibleLayer = distance;
+                }
+            }
+        }
+        return nearestEligibleLayer;
     }
 
 
