@@ -6,6 +6,7 @@ public class OnionLayerManager : MonoBehaviour
 {
     public int numberOfLayers;
     private OnionLayerStorage layerStorage;
+    private static float epsilonForAttachingDistance = 0.02f;
 
     private void Start()
     {
@@ -76,7 +77,10 @@ public class OnionLayerManager : MonoBehaviour
 
     private bool IsLayerToAttachCloseEnough(GameObject layerToAttach)
     {
-        return true;
+        float distance = (transform.position - layerToAttach.transform.position).magnitude;
+        float radius = GetComponent<CircleCollider2D>().radius;
+        float layerToAttachRadius = layerToAttach.GetComponent<CircleCollider2D>().radius;
+        return distance < radius + layerToAttachRadius + epsilonForAttachingDistance;
     }
 
 }
