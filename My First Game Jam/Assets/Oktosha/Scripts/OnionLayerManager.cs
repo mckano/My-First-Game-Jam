@@ -37,8 +37,8 @@ public class OnionLayerManager : MonoBehaviour
 
             if (overlap == null)
             {
-                Instantiate(layerStorage.onionLayers[numberOfLayers], transform.position, transform.rotation);
-                Instantiate(layerStorage.onionPlayers[numberOfLayers - 1], spawnPosition, transform.rotation);
+                Instantiate(layerStorage.onionLayers[numberOfLayers], transform.position, Quaternion.identity);
+                Instantiate(layerStorage.onionPlayers[numberOfLayers - 1], spawnPosition, Quaternion.identity);
                 Destroy(gameObject);
             }
             else
@@ -54,7 +54,7 @@ public class OnionLayerManager : MonoBehaviour
         GameObject layerToAttach = FindNearestEligibleLayer();
         if (layerToAttach != null && IsLayerToAttachCloseEnough(layerToAttach))
         {
-            Instantiate(layerStorage.onionPlayers[numberOfLayers + 1], layerToAttach.transform.position, layerToAttach.transform.rotation);
+            Instantiate(layerStorage.onionPlayers[numberOfLayers + 1], layerToAttach.transform.position, Quaternion.identity);
             Destroy(gameObject);
             Destroy(layerToAttach);
         }
