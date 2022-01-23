@@ -53,6 +53,98 @@
 						<ActiveSource Name="wasd_block_106_click+sine-2_m_p" ID="{E5C14BCE-E26C-4BDE-9B63-78C55D01022B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<ActorMixer Name="player_loco" ID="{C9FE5651-B8B1-4809-804D-0C209C09380E}" ShortID="257895526">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="player_loco_jumps" ID="{2D0A2318-7498-47B0-89A9-6F05794738F5}" ShortID="288172187">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<RandomSequenceContainer Name="player_loco_footsteps" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}" ShortID="215538117">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="player_loco_footsteps_default_01" ID="{0D5744B0-04DE-48A5-AAAE-E5F051CA002F}" ShortID="89992238">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="player_loco_footsteps_default_02" ID="{F8B4247A-09C5-40A6-9E4A-C14099598F80}" ShortID="169267322">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="player_loco_footsteps_default_03" ID="{05603020-F938-4091-B3AD-4B60AF42D702}" ShortID="760362501">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="player_loco_footsteps_default_04" ID="{8B2D4719-81A8-4749-A219-B57FC451A705}" ShortID="61492470">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="player_loco_footsteps_default_05" ID="{58CAC3B6-F47F-48C8-8E34-ECA97ED77C31}" ShortID="599896943">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

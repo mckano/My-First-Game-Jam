@@ -13,6 +13,7 @@
 				<Language Name="SFX" ID="{E2A789B7-6C22-47EA-8A4E-C739EBEF2757}"/>
 			</LanguageList>
 			<PropertyList>
+				<Property Name="EventNameModifyCase" Type="bool" Value="True"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
@@ -67,8 +68,8 @@
 				</Property>
 				<Property Name="VolumeThreshold" Type="Real64">
 					<ValueList>
-						<Value Platform="Mac">-80</Value>
-						<Value Platform="Windows">-80</Value>
+						<Value Platform="Mac">-70</Value>
+						<Value Platform="Windows">-70</Value>
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2021.1|Build=7749|VersionName=v2021.1.5|Config=Release"/>

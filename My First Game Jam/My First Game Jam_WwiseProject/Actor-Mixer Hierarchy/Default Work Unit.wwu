@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{03FB3F02-4D93-4CC1-918F-4E7B56ECC53E}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="Player" ID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}" PersistMode="Reference"/>
+				<WorkUnit Name="World" ID="{E516D78C-C9DC-4CEF-9761-12F8F0AD7EB9}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

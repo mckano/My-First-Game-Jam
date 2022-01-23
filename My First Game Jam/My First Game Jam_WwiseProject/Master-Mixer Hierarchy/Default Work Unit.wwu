@@ -9,6 +9,25 @@
 							<ObjectRef Name="System" ID="{FCA04950-BA18-40A0-AD18-13D9388E2B2F}" WorkUnitID="{1484DC06-1002-4248-AB26-68F4AA63753A}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="MusicMaster" ID="{3FA5AB6E-DA1D-4A16-A75A-C8C9E7EA61E0}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="PlayerMaster" ID="{1E49E3EB-1689-4283-9005-53DCCAD64542}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="WorldMaster" ID="{643B27EA-C7B0-493F-8761-6A665FACD09E}">
+							<ObjectLists/>
+						</Bus>
+						<AuxBus Name="ReverbsMasterAux" ID="{8BE2C2B5-D893-4941-A708-5F5035958475}">
+							<ChildrenList>
+								<AuxBus Name="DefaultReverb" ID="{B4CE6F2B-E931-4FCF-AA64-5BA40AA2AC8E}">
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
+							<ObjectLists/>
+						</AuxBus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>
