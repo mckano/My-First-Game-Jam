@@ -28,7 +28,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Test3" ID="{4E887422-F09A-4E60-A44D-44C3B6727BDD}"/>
+				<Event Name="Play_Test4" ID="{4E887422-F09A-4E60-A44D-44C3B6727BDD}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
