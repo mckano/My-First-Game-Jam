@@ -6,21 +6,20 @@ public class PlayerMovement : MonoBehaviour
 {
 
     Rigidbody2D rb;
+    Collider2D cldr;
 
     public float movementSpeed;
     public float jumpForce;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        cldr = GetComponent<Collider2D>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float speedX = Input.GetAxisRaw("Horizontal") * Time.deltaTime;
-
         rb.velocity = new Vector2(speedX * movementSpeed, rb.velocity.y);
     }
 
@@ -31,12 +30,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        Vector3 offsetY = new Vector3(0, (transform.localScale.y / 2) + 0.1f, 0);
-
         if (Input.GetKeyDown(KeyCode.Space)) 
         {
-            if (Physics2D.Raycast(transform.position - offsetY, Vector2.down, 0.1f))
+            Vector3 legsCenterPosition = new Vector3(cldr.bounds.center.x, cldr.bounds.min.y, cldr.bounds.center.z);
+            Debug.DrawLine(legsCenterPosition, legsCenterPosition + Vector3.down * 0.1f, Color.green);
+            RaycastHit2D hitObject = Physics2D.Raycast(legsCenterPosition + Vector3.down * 0.1f, Vector2.down, 0.1f);
+            if (hitObject)
             {
+                Debug.Log("I can jump because I stand on " + hitObject.collider.gameObject.name);
                 rb.AddForce(new Vector2(0, jumpForce));
             }
         }
