@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="My First Game Jam_WwiseProject" Platform="Windows" BasePlatform="Windows">
 	<Plugins>
-		<Plugin Name="Wwise Sine" ID="6553602" DLL="AkSineTone" StaticLib="AkSineSource"/>
+		<Plugin Name="Wwise Tone Generator" ID="6684674" DLL="AkToneGen" StaticLib="AkToneSource"/>
 		<Plugin Name="System" ID="11403271"/>
 		<Plugin Name="No Output" ID="11862023"/>
 	</Plugins>

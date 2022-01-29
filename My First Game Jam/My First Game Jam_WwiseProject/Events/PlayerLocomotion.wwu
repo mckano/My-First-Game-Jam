@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C616525A-F129-4975-A409-F11FF55ADF9A}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="PlayerLocomotion" ID="{C616525A-F129-4975-A409-F11FF55ADF9A}" PersistMode="Standalone"/>
+		<WorkUnit Name="PlayerLocomotion" ID="{C616525A-F129-4975-A409-F11FF55ADF9A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="play_player_loco_rolling_noise" ID="{EB32801A-E208-4CF0-9345-116560935C84}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{92ABF380-3EE3-4BD1-BCEE-BCA0FC7C6E08}" ShortID="730448590">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_loco_rolling_synth" ID="{CCBE72AA-6AC6-40C9-A0B6-F0352BE3513B}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_player_loco_rolling_onion" ID="{ED6F7EA9-2322-45D6-8B9B-6BF65D939CEF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{1809CC88-BC73-418A-9974-1D708A70E45B}" ShortID="944519125">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_loco_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A9FDE943-44C8-4354-BBAE-C52B6839C482}" ShortID="381781865">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekPercent" Type="Real64" Value="50"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_loco_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_player_loco_footsteps" ID="{AFD2162B-8A24-4555-8A22-889528201F84}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{E43AC9E2-2D74-4597-98BE-56DCBCF93A1C}" ShortID="942399484">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_loco_footsteps" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

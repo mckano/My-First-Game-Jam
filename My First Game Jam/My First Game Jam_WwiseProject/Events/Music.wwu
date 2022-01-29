@@ -3,7 +3,12 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{2EAF8331-0021-41AE-9517-01F1AAB204C1}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="new_event" ID="{B2A286AD-28CD-46A4-A2E6-B4F1F26A2C23}"/>
+				<Event Name="music" ID="{B2A286AD-28CD-46A4-A2E6-B4F1F26A2C23}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

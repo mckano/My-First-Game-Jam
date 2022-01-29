@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EE3148DC-F040-4520-BEA3-4D40BA0892EA}" SchemaVersion="103">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{EE3148DC-F040-4520-BEA3-4D40BA0892EA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EE3148DC-F040-4520-BEA3-4D40BA0892EA}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="Noise Modulator LFO" ID="{79CD048C-BDDB-49AF-A655-DA9D474174ED}" ShortID="642706188">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="18.9"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="4.2">
+							<RTPCList>
+								<RTPC Name="" ID="{270A0EBC-187E-4FE0-9A29-B7405018389B}" ShortID="211310712">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="RTPC_Noise" ID="{9F725576-0841-4578-85D8-EED300B049C4}" WorkUnitID="{E27772BB-A52C-4A93-8B08-E11299E02C80}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{889D1547-F34D-4416-A66A-4DE9DF7679DF}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>255.95615</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="LfoPWM" Type="Real64" Value="12.1"/>
+						<Property Name="LfoWaveform" Type="int32" Value="1"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

@@ -1,62 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}" SchemaVersion="103" RootDocumentID="{03FB3F02-4D93-4CC1-918F-4E7B56ECC53E}" ParentDocumentID="{03FB3F02-4D93-4CC1-918F-4E7B56ECC53E}">
+<WwiseDocument Type="WorkUnit" ID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Player" ID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}" OwnerID="{03FB3F02-4D93-4CC1-918F-4E7B56ECC53E}" PersistMode="Nested">
+		<WorkUnit Name="Player" ID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Test" ID="{CC441261-57FF-4C8F-973C-2F548D3B7056}" ShortID="607608942">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<SourcePlugin Name="Wwise Sine" ID="{BF2E3780-1603-43CA-B779-82C701168750}" ShortID="809201265" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
-							<PropertyList>
-								<Property Name="SineDuration" Type="Real32" Value="0.201"/>
-								<Property Name="SineFrequency" Type="Real32" Value="749"/>
-							</PropertyList>
-							<Language>SFX</Language>
-						</SourcePlugin>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Wwise Sine" ID="{BF2E3780-1603-43CA-B779-82C701168750}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Test2" ID="{85E01BCC-F5F5-407B-A4B7-C2ED4F2D4FCE}" ShortID="140649848">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="wasd_block_106_click+sine-2_m_p" ID="{E5C14BCE-E26C-4BDE-9B63-78C55D01022B}">
-							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="0.00308390022675737"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>wasd_block_106_click+sine-2_m_p.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="829094000"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="wasd_block_106_click+sine-2_m_p" ID="{E5C14BCE-E26C-4BDE-9B63-78C55D01022B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<ActorMixer Name="player_loco" ID="{C9FE5651-B8B1-4809-804D-0C209C09380E}" ShortID="257895526">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+							<Custom>
+								<Conversion Name="Conversion Settings (Custom)" ID="{5B5CF671-0BC2-42B6-949B-D7A1912E8F6F}">
+									<PropertyList>
+										<Property Name="Channels" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">4</Value>
+												<Value Platform="Windows">4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="LRMix" Type="Real64">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MinSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">44100</Value>
+												<Value Platform="Windows">44100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ConversionPluginInfoList>
+										<ConversionPluginInfo Platform="Mac">
+											<ConversionPlugin Name="" ID="{9780C32A-074D-4DB2-83CF-42371CB2E5C5}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+												<PropertyList>
+													<Property Name="QualityFactor" Type="Real32" Value="7"/>
+												</PropertyList>
+											</ConversionPlugin>
+										</ConversionPluginInfo>
+										<ConversionPluginInfo Platform="Windows">
+											<ConversionPlugin Name="" ID="{FEE3EE11-0721-4A25-BF7B-D8F3F3426D89}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+												<PropertyList>
+													<Property Name="QualityFactor" Type="Real32" Value="7"/>
+												</PropertyList>
+											</ConversionPlugin>
+										</ConversionPluginInfo>
+									</ConversionPluginInfoList>
+								</Conversion>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
@@ -64,6 +65,14 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="player_loco_footsteps" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}" ShortID="215538117">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -82,7 +91,19 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 08_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{332E44DC-723D-4F74-8477-003D50A6741C}">
+											<Language>SFX</Language>
+											<AudioFile>FOODIngr_Onion Tappin Hitting Footsteps Rustling 08_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="114572221"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
 									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 08_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{332E44DC-723D-4F74-8477-003D50A6741C}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_loco_footsteps_default_02" ID="{F8B4247A-09C5-40A6-9E4A-C14099598F80}" ShortID="169267322">
 									<ReferenceList>
@@ -93,7 +114,24 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 02_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{CE28224C-5A8C-4D2F-A5A2-4473B14E0EE8}">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+											</ReferenceList>
+											<Language>SFX</Language>
+											<AudioFile>Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 02_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="291125973"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
 									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 02_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{CE28224C-5A8C-4D2F-A5A2-4473B14E0EE8}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_loco_footsteps_default_03" ID="{05603020-F938-4091-B3AD-4B60AF42D702}" ShortID="760362501">
 									<ReferenceList>
@@ -104,7 +142,24 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 03_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{4C068155-C65D-4B83-A12A-8A6340E929EA}">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+											</ReferenceList>
+											<Language>SFX</Language>
+											<AudioFile>Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 03_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="514191022"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
 									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 03_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{4C068155-C65D-4B83-A12A-8A6340E929EA}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_loco_footsteps_default_04" ID="{8B2D4719-81A8-4749-A219-B57FC451A705}" ShortID="61492470">
 									<ReferenceList>
@@ -115,7 +170,24 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 04_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{8691AB79-0802-4862-92C0-A3DB76F30AE6}">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+											</ReferenceList>
+											<Language>SFX</Language>
+											<AudioFile>Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 04_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="124501231"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
 									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 04_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{8691AB79-0802-4862-92C0-A3DB76F30AE6}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_loco_footsteps_default_05" ID="{58CAC3B6-F47F-48C8-8E34-ECA97ED77C31}" ShortID="599896943">
 									<ReferenceList>
@@ -126,7 +198,19 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 10_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{6F3B2BE9-3E4F-4FA2-9090-E61333F253BE}">
+											<Language>SFX</Language>
+											<AudioFile>FOODIngr_Onion Tappin Hitting Footsteps Rustling 10_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="14969111"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
 									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOODIngr_Onion Tappin Hitting Footsteps Rustling 10_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono" ID="{6F3B2BE9-3E4F-4FA2-9090-E61333F253BE}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
@@ -267,13 +351,126 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<Sound Name="player_loco_rolling_synth" ID="{CCBE72AA-6AC6-40C9-A0B6-F0352BE3513B}" ShortID="603037778">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{16D1FA84-CCE2-4B41-983A-276795D0F3CB}" ShortID="224189034" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="3.4"/>
+										<Property Name="SustainLevel" Type="Real32" Value="0"/>
+										<Property Name="SustainTime" Type="Real32" Value="0"/>
+										<Property Name="WaveGain" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{7581E7BE-55D5-4B0E-A008-DB3253158F91}" ShortID="557519727">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Noise Modulator LFO" ID="{79CD048C-BDDB-49AF-A655-DA9D474174ED}" WorkUnitID="{EE3148DC-F040-4520-BEA3-4D40BA0892EA}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{23E02B99-9C54-4E79-9BCF-337524F8520A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96.3000030517578</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="WaveType" Type="int32" Value="5"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{16D1FA84-CCE2-4B41-983A-276795D0F3CB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="player_loco_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" ShortID="910951822">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="onion_loco_rolling" ID="{8DB24A6D-F56E-4242-A3FB-055974885C2B}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList/>
+									<Language>SFX</Language>
+									<AudioFile>Zzogg\locomotion\onion_loco_rolling.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1016039546"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="onion_loco_rolling_eq" ID="{6DEDF956-A446-4314-88A2-65382A822E99}">
+									<Language>SFX</Language>
+									<AudioFile>Zzogg\locomotion\onion_loco_rolling_eq.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="885695421"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="onion_loco_rolling" ID="{8DB24A6D-F56E-4242-A3FB-055974885C2B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="player_vocs_edude" ID="{0E202FBD-37A6-499D-A1EB-D8F27318FA92}" ShortID="196762209">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+							<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>

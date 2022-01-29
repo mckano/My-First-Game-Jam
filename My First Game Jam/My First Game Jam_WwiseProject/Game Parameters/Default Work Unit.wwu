@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E27772BB-A52C-4A93-8B08-E11299E02C80}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{E27772BB-A52C-4A93-8B08-E11299E02C80}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E27772BB-A52C-4A93-8B08-E11299E02C80}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_Noise" ID="{9F725576-0841-4578-85D8-EED300B049C4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="40"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

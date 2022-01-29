@@ -8,7 +8,7 @@
 						<Action Name="" ID="{1A201652-4895-467C-90B0-F3B6D7C7C210}" ShortID="59235957">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Test" ID="{CC441261-57FF-4C8F-973C-2F548D3B7056}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+									<ObjectRef Name="Test" ID="{CC441261-57FF-4C8F-973C-2F548D3B7056}" WorkUnitID="{03FB3F02-4D93-4CC1-918F-4E7B56ECC53E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -22,7 +22,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Test2" ID="{85E01BCC-F5F5-407B-A4B7-C2ED4F2D4FCE}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+									<ObjectRef Name="Test2" ID="{85E01BCC-F5F5-407B-A4B7-C2ED4F2D4FCE}" WorkUnitID="{03FB3F02-4D93-4CC1-918F-4E7B56ECC53E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

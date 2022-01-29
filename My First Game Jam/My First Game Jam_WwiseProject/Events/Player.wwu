@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B90999B0-2277-4741-AE2F-147AB710BE94}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Player" ID="{B90999B0-2277-4741-AE2F-147AB710BE94}" PersistMode="Standalone"/>
+		<WorkUnit Name="Player" ID="{B90999B0-2277-4741-AE2F-147AB710BE94}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="play_player_vocs_edude_grunts" ID="{9A3A2637-0E68-4A9C-BE53-351ABF713F2A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{4E590489-FEAE-43B3-8545-A9F9979ED58C}" ShortID="973436833">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_vocs_edude_grunts" ID="{437EE32A-F4CC-44B0-A2EE-B3857B1EC913}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_player_vocs_edude_sighs" ID="{496A9544-F091-4364-875A-DFA14C844267}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{28B733BB-0ACC-43D5-B59F-3EF8D730432B}" ShortID="355521281">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_vocs_edude_sighs" ID="{D0D2EC14-4B1D-4A0F-A5A6-7BFFAC49A521}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_player_vocs_edude_laughts" ID="{95A5EE1E-963F-4C6B-8DE7-F39D12B4E9F3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{72D74524-9896-4104-9BB5-CF709E5414A1}" ShortID="1065819820">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_vocs_edude_laughts" ID="{0074E0C1-2B78-43EA-8364-F38A1B57C7AF}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_player_vocs_edude_onion" ID="{21EBA077-562D-491F-A571-2FC030BE6DEA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{E30FF72F-ED4A-435F-A7E7-4A935FE28A9B}" ShortID="1002524512">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_vocs_edude_onion" ID="{030ABA88-E81D-4DDD-A49E-BD78B1528663}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

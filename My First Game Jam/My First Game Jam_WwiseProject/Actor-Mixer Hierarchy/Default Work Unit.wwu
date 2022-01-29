@@ -3,8 +3,56 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{03FB3F02-4D93-4CC1-918F-4E7B56ECC53E}" PersistMode="Standalone">
 			<ChildrenList>
-				<WorkUnit Name="Player" ID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}" PersistMode="Reference"/>
-				<WorkUnit Name="World" ID="{E516D78C-C9DC-4CEF-9761-12F8F0AD7EB9}" PersistMode="Reference"/>
+				<Sound Name="Test" ID="{CC441261-57FF-4C8F-973C-2F548D3B7056}" ShortID="607608942">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Wwise Sine" ID="{BF2E3780-1603-43CA-B779-82C701168750}" ShortID="809201265" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+							<PropertyList>
+								<Property Name="SineDuration" Type="Real32" Value="0.201"/>
+								<Property Name="SineFrequency" Type="Real32" Value="749"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Wwise Sine" ID="{BF2E3780-1603-43CA-B779-82C701168750}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Test2" ID="{85E01BCC-F5F5-407B-A4B7-C2ED4F2D4FCE}" ShortID="140649848">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="wasd_block_106_click+sine-2_m_p" ID="{E5C14BCE-E26C-4BDE-9B63-78C55D01022B}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.00308390022675737"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>wasd_block_106_click+sine-2_m_p.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="829094000"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="wasd_block_106_click+sine-2_m_p" ID="{E5C14BCE-E26C-4BDE-9B63-78C55D01022B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

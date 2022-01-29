@@ -5,10 +5,16 @@
 			<PropertyList>
 				<Property Name="AudioFileImporter\x64_TemplateMRU" Type="string" Value="YRJEzP9Xj0yXPC9UjTtwVg=="/>
 				<Property Name="Event Action List\{1C563E39-36C3-4D50-A93E-B7069C845881}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{21EBA077-562D-491F-A571-2FC030BE6DEA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{496A9544-F091-4364-875A-DFA14C844267}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4E887422-F09A-4E60-A44D-44C3B6727BDD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7F3BEB3F-714A-41AA-AB5F-B427CCD0C01B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{AFD2162B-8A24-4555-8A22-889528201F84}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B2A286AD-28CD-46A4-A2E6-B4F1F26A2C23}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D12F06B3-A19B-4CA7-9083-CE6F786AC255}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E3858F15-DA42-4D46-B8FE-7029FA169431}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EB32801A-E208-4CF0-9345-116560935C84}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{ED6F7EA9-2322-45D6-8B9B-6BF65D939CEF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -45,6 +51,7 @@
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
+				<Property Name="PluginUserAcknowledge\SoundSeedAir" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_12_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{3FA5AB6E-DA1D-4A16-A75A-C8C9E7EA61E0}"/>
