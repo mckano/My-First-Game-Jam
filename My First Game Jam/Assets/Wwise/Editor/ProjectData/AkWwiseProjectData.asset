@@ -154,7 +154,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c91726d3393f2f43a7bee2f03ef9cc29
     GuidInternal: 
-    m_lastTime: -8585581451454872310
+    m_lastTime: -8585581402492012824
     List:
     - name: Main
       guid: 5195ceaa2c067d42a19b5ff768537778
@@ -196,7 +196,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b20e98e79ecc0a42bcc5226751d3d401
     GuidInternal: 
-    m_lastTime: -8585581453466144741
+    m_lastTime: -8585579600309917688
     List:
     - name: Play_Test
       guid: 393e561cc336504da93eb7069c845881
@@ -260,7 +260,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 3183af2e2100ae41951701f1aab204c1
     GuidInternal: 
-    m_lastTime: -8585581454562297444
+    m_lastTime: -8585581402492223001
     List:
     - name: music
       guid: ad86a2b2cd28a446a2e6b4f1f26a2c23
@@ -290,7 +290,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: b09909b977224147ae2f147ab710be94
     GuidInternal: 
-    m_lastTime: -8585581453466064664
+    m_lastTime: -8585579600309842619
     List:
     - name: play_player_vocs_edude_grunts
       guid: 37263a9a680e9c4abe53351abf713f2a
@@ -307,8 +307,8 @@ MonoBehaviour:
         guid: 37263a9a680e9c4abe53351abf713f2a
       Path: Events\Player\play_player_vocs_edude_grunts
       maxAttenuation: 0
-      maxDuration: 0.769229
-      minDuration: 0.312494
+      maxDuration: 0.240385
+      minDuration: 0.240385
     - name: play_player_vocs_edude_laughts
       guid: 1eeea5953f966b4c8de7f39d12b4e9f3
       id: 2506827726
@@ -371,7 +371,7 @@ MonoBehaviour:
     ParentPath: Events\PlayerLocomotion
     guid: 5a5216c629f17549a409f11ff55adf9a
     GuidInternal: 
-    m_lastTime: -8585581451454782232
+    m_lastTime: -8585579600309767554
     List:
     - name: play_player_loco_footsteps
       guid: 2b16d2af248a55458a22889528201f84
@@ -390,6 +390,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.183458
       minDuration: 0.163229
+    - name: play_player_loco_pop_in
+      guid: 1e713ecbca5e1944a65ac31dd9a0310f
+      id: 165273641
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerLocomotion
+        ObjectType: 12
+        guid: 5a5216c629f17549a409f11ff55adf9a
+      - ElementName: play_player_loco_pop_in
+        ObjectType: 3
+        guid: 1e713ecbca5e1944a65ac31dd9a0310f
+      Path: Events\PlayerLocomotion\play_player_loco_pop_in
+      maxAttenuation: 0
+      maxDuration: 0.203568
+      minDuration: 0.070123
+    - name: play_player_loco_pop_out
+      guid: 251eae5401673643b04d20b866d2587d
+      id: 2952227656
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerLocomotion
+        ObjectType: 12
+        guid: 5a5216c629f17549a409f11ff55adf9a
+      - ElementName: play_player_loco_pop_out
+        ObjectType: 3
+        guid: 251eae5401673643b04d20b866d2587d
+      Path: Events\PlayerLocomotion\play_player_loco_pop_out
+      maxAttenuation: 0
+      maxDuration: 0.170193
+      minDuration: 0.125026
     - name: play_player_loco_rolling_noise
       guid: 1a8032eb08e2f04c9345116560935c84
       id: 2206730916
@@ -436,7 +470,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: bb7277e22ca5934a8b08e11299e02c80
     GuidInternal: 
-    m_lastTime: -8585581415521838488
+    m_lastTime: -8585581402492202990
     List:
     - name: RTPC_Noise
       guid: 7655729f4108784585d8eed300b049c4
@@ -495,7 +529,7 @@ MonoBehaviour:
     m_lastTime: -8585593113396093206
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000c000000110000001700000018000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

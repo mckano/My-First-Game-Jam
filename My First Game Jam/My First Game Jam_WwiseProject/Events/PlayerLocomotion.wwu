@@ -59,6 +59,36 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="play_player_loco_pop_in" ID="{CB3E711E-5ECA-4419-A65A-C31DD9A0310F}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{EC6EE5EE-4ECA-4F06-9EA3-2314E3A0A914}" ShortID="679185171">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_loco_pop in" ID="{2E83ABB0-7922-411B-883D-4D722520CEA4}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_player_loco_pop_out" ID="{54AE1E25-6701-4336-B04D-20B866D2587D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{9E3E15AA-D27E-4C14-AA0D-B2FD1BFF78B9}" ShortID="909119203">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_loco_pop out" ID="{95FBA9F8-8DA3-47D6-8206-164503AFBAD3}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
