@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Oktosha/Scenes/Oktosha_Start.unity
+    guid: 99c28bd04911d440f8e59d84221b2615
+  - enabled: 1
+    path: Assets/Oktosha/Scenes/Oktosha_Environment.unity
+    guid: 6a1e70725bc1f445cb5774bcd1ae2947
+  - enabled: 1
+    path: Assets/Oktosha/Scenes/Oktosha_Credits.unity
+    guid: 82937ad39bb0f44f79f45e736a913bb2
   m_configObjects: {}
