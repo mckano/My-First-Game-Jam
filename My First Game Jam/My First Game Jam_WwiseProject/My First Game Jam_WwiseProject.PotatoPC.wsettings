@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="UserProjectSettings" SchemaVersion="103">
 	<UserProjectSettingsInfo>
-		<UserProjectSettings Name="" ID="{722B98A4-19CB-4629-930A-9F0D076883C5}">
+		<UserProjectSettings Name="" ID="{B6A7ADBB-413D-4E69-98D7-6A739B41FF95}">
 			<PropertyList>
-				<Property Name="AudioFileImporter\x64_TemplateMRU" Type="string" Value="YRJEzP9Xj0yXPC9UjTtwVg=="/>
-				<Property Name="Event Action List\{1C563E39-36C3-4D50-A93E-B7069C845881}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{21EBA077-562D-491F-A571-2FC030BE6DEA}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{496A9544-F091-4364-875A-DFA14C844267}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{4E887422-F09A-4E60-A44D-44C3B6727BDD}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{7F3BEB3F-714A-41AA-AB5F-B427CCD0C01B}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{AFD2162B-8A24-4555-8A22-889528201F84}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{B2A286AD-28CD-46A4-A2E6-B4F1F26A2C23}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{D12F06B3-A19B-4CA7-9083-CE6F786AC255}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{E3858F15-DA42-4D46-B8FE-7029FA169431}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{EB32801A-E208-4CF0-9345-116560935C84}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{ED6F7EA9-2322-45D6-8B9B-6BF65D939CEF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -30,13 +18,11 @@
 				</Property>
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
-				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
-				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="q2Vi4WvxDEKl1v7uDTJK6ym07uBJvzBHlRuOlPFP9BY="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="UZXOqiwGfUKhm1/3aFN3eNDW2FcV0udDlwKPGQ45ESk="/>
-				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="BCznMryiF0m9a6VpZJYajAEnKgX/////FktcMjwqHUS+uSqT5ZHL6wEnKgX/////"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
+				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -47,14 +33,9 @@
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
 				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
-				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
-				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
-				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
-				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
-				<Property Name="PluginUserAcknowledge\SoundSeedAir" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_12_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{3FA5AB6E-DA1D-4A16-A75A-C8C9E7EA61E0}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{27092F88-225A-1154-6725-C8A34F3D4482}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_5_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_7_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
@@ -68,19 +49,20 @@
 				<Property Name="ProjectExplorer\x64_Expanded_17_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_18_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="BtyEFAIQSEKrJmj0qmN1Og=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="YcQthUbrjUCDN7z+l9Y/9NikFBWmHSpBoX51ygwhSfO1wuKLk9hBSacIX1A1lYR1"/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="xUm1a/1fBUGr/Tl9Uab0uVFW/smxuAlIgE0MIJwJOA69LyAOpjedSaHr2PJzGPqSSYs6HOlS1kuscY4eQp/mrxBv/NpLhIxMqlTjBlQJ+MMCP/sDk03BTJGPTntW7MU+"/>
-				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="MYOvLiEArkGVFwHxqrIEwbIOmOeezApCvMUiZ1HT1AGwmQm5dyJBR64vFHq3EL6U"/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="yRcm0zk/L0OnvuLwPvnMKQ=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_9_1" Type="string" Value=""/>
-				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="yRcm0zk/L0OnvuLwPvnMKQ=="/>
+				<Property Name="RTPC\GameParameterSimValue\{9F725576-0841-4578-85D8-EED300B049C4}" Type="Real64" Value="40"/>
+				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
@@ -113,20 +95,6 @@
 					</ValueList>
 				</Property>
 			</PropertyList>
-			<PluginInnerObjectList>
-				<List Name="BatchRenameSettings">
-					<PluginInnerObject Name="" ID="{E4A06611-175D-4631-B1D1-90C9D75D4B49}" PluginName="BatchRenameSettings" CompanyID="0" PluginID="992">
-						<PropertyList>
-							<Property Name="EnableInsert" Type="bool" Value="True"/>
-							<Property Name="EnableRemove" Type="bool" Value="True"/>
-							<Property Name="EnableReplace" Type="bool" Value="False"/>
-							<Property Name="InsertToInsert" Type="string" Value="player_vocs_edude_laughts_0"/>
-							<Property Name="RemoveCount" Type="int32" Value="5"/>
-							<Property Name="insertFrom" Type="int16" Value="0"/>
-						</PropertyList>
-					</PluginInnerObject>
-				</List>
-			</PluginInnerObjectList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>
 </WwiseDocument>

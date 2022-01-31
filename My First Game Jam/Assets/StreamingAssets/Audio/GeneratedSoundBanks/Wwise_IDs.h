@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_PLAYER_LOCO_FOOTSTEPS = 2069093569U;
+        static const AkUniqueID PLAY_PLAYER_LOCO_POP_IN = 165273641U;
+        static const AkUniqueID PLAY_PLAYER_LOCO_POP_OUT = 2952227656U;
         static const AkUniqueID PLAY_PLAYER_LOCO_ROLLING_NOISE = 2206730916U;
         static const AkUniqueID PLAY_PLAYER_LOCO_ROLLING_ONION = 688589301U;
         static const AkUniqueID PLAY_PLAYER_VOCS_EDUDE_GRUNTS = 3809297239U;

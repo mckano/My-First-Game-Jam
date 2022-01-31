@@ -20,7 +20,7 @@
 				<AuxBus Id="3786372668" Name="ReverbsMasterAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbsMasterAux"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1730082167">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1147280016">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -49,6 +49,30 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="165273641" Name="play_player_loco_pop_in" ObjectPath="\Events\PlayerLocomotion\play_player_loco_pop_in" DurationType="OneShot" DurationMin="0.070123" DurationMax="0.203568">
+					<IncludedMemoryFiles>
+						<File Id="449957065" Language="SFX">
+							<ShortName>Zzogg\locomotion\player_loco_pop in_02.wav</ShortName>
+							<Path>SFX\Zzogg\locomotion\player_loco_pop in_02_7E846921.wem</Path>
+						</File>
+						<File Id="589217108" Language="SFX">
+							<ShortName>Zzogg\locomotion\player_loco_pop in_01.wav</ShortName>
+							<Path>SFX\Zzogg\locomotion\player_loco_pop in_01_7E846921.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2952227656" Name="play_player_loco_pop_out" ObjectPath="\Events\PlayerLocomotion\play_player_loco_pop_out" DurationType="OneShot" DurationMin="0.125026" DurationMax="0.170193">
+					<IncludedMemoryFiles>
+						<File Id="78758183" Language="SFX">
+							<ShortName>Zzogg\locomotion\player_loco_pop out_01.wav</ShortName>
+							<Path>SFX\Zzogg\locomotion\player_loco_pop out_01_7E846921.wem</Path>
+						</File>
+						<File Id="299665870" Language="SFX">
+							<ShortName>player_loco_pop out_02.wav</ShortName>
+							<Path>SFX\player_loco_pop out_02_7E846921.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2206730916" Name="play_player_loco_rolling_noise" ObjectPath="\Events\PlayerLocomotion\play_player_loco_rolling_noise" DurationType="Infinite"/>
 				<Event Id="688589301" Name="play_player_loco_rolling_onion" ObjectPath="\Events\PlayerLocomotion\play_player_loco_rolling_onion" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -58,43 +82,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3809297239" Name="play_player_vocs_edude_grunts" ObjectPath="\Events\Player\play_player_vocs_edude_grunts" DurationType="OneShot" DurationMin="0.312494" DurationMax="0.769229">
+				<Event Id="3809297239" Name="play_player_vocs_edude_grunts" ObjectPath="\Events\Player\play_player_vocs_edude_grunts" DurationType="OneShot" DurationMin="0.240385" DurationMax="0.240385">
 					<IncludedMemoryFiles>
-						<File Id="17405138" Language="SFX">
-							<ShortName>Grunt9.wav</ShortName>
-							<Path>SFX\Grunt9_A2BFDF47.wem</Path>
-						</File>
-						<File Id="43153528" Language="SFX">
-							<ShortName>Grunt2.wav</ShortName>
-							<Path>SFX\Grunt2_A2BFDF47.wem</Path>
-						</File>
-						<File Id="89811264" Language="SFX">
-							<ShortName>Grunt7.wav</ShortName>
-							<Path>SFX\Grunt7_A2BFDF47.wem</Path>
-						</File>
-						<File Id="118987597" Language="SFX">
-							<ShortName>Grunt6.wav</ShortName>
-							<Path>SFX\Grunt6_A2BFDF47.wem</Path>
-						</File>
-						<File Id="470008800" Language="SFX">
-							<ShortName>Grunt4.wav</ShortName>
-							<Path>SFX\Grunt4_A2BFDF47.wem</Path>
-						</File>
-						<File Id="513294707" Language="SFX">
-							<ShortName>Grunt3.wav</ShortName>
-							<Path>SFX\Grunt3_A2BFDF47.wem</Path>
-						</File>
-						<File Id="567380843" Language="SFX">
-							<ShortName>Grunt5.wav</ShortName>
-							<Path>SFX\Grunt5_A2BFDF47.wem</Path>
-						</File>
-						<File Id="989097670" Language="SFX">
-							<ShortName>Grunt1.wav</ShortName>
-							<Path>SFX\Grunt1_A2BFDF47.wem</Path>
-						</File>
-						<File Id="1048937478" Language="SFX">
-							<ShortName>Grunt8.wav</ShortName>
-							<Path>SFX\Grunt8_A2BFDF47.wem</Path>
+						<File Id="871168759" Language="SFX">
+							<ShortName>Sigh5.wav</ShortName>
+							<Path>SFX\Sigh5_A2BFDF47.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
