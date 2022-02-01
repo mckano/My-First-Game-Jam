@@ -8,10 +8,15 @@
 		<ExternalSourcesOutputRoot>C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="976112377" Language="SFX">
+			<ShortName>Music\OnionIsland98bpm.wav</ShortName>
+			<Path>SFX\Music\OnionIsland98bpm_D79FB2B7.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1665536343">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3503917858">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -20,11 +25,12 @@
 				<AuxBus Id="3786372668" Name="ReverbsMasterAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbsMasterAux"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1147280016">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1731202233">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3084600189" Name="play_onion_music" ObjectPath="\Events\Default Work Unit\play_onion_music" DurationType="Infinite"/>
 				<Event Id="2069093569" Name="play_player_loco_footsteps" ObjectPath="\Events\PlayerLocomotion\play_player_loco_footsteps" DurationType="OneShot" DurationMin="0.163229" DurationMax="0.183458">
 					<IncludedMemoryFiles>
 						<File Id="14969111" Language="SFX">
@@ -191,9 +197,21 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="976112377"/>
+			</ReferencedStreamedFiles>
 			<GameParameters>
 				<GameParameter Id="3334042923" Name="RTPC_Noise" ObjectPath="\Game Parameters\Default Work Unit\RTPC_Noise"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="410841082" Name="StateGroupMusic" ObjectPath="\States\Default Work Unit\StateGroupMusic" GUID="{D8C8119F-8381-4982-AEA6-E5177896FA7B}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\StateGroupMusic\None" GUID="{022619E1-3346-4238-8807-3A176F23F555}"/>
+						<State Id="3374585465" Name="InMenu" ObjectPath="\States\Default Work Unit\StateGroupMusic\InMenu" GUID="{028691CD-40EF-4D02-B99C-0F453A2E05B6}"/>
+						<State Id="3372421815" Name="LevelStart" ObjectPath="\States\Default Work Unit\StateGroupMusic\LevelStart" GUID="{94755236-2D6D-4D4C-9D8E-09022202EF13}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="3576371722" Language="SFX" Hash="3219198469">
 			<ObjectPath>\SoundBanks\Default Work Unit\ZzoggTest</ObjectPath>

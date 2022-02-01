@@ -4,6 +4,10 @@
 		<WorkUnit Name="Player" ID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="player_loco" ID="{C9FE5651-B8B1-4809-804D-0C209C09380E}" ShortID="257895526">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<Custom>
@@ -879,6 +883,10 @@
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="player_vocs_edude" ID="{0E202FBD-37A6-499D-A1EB-D8F27318FA92}" ShortID="196762209">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>

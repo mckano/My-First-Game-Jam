@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_ONION_MUSIC = 3084600189U;
         static const AkUniqueID PLAY_PLAYER_LOCO_FOOTSTEPS = 2069093569U;
         static const AkUniqueID PLAY_PLAYER_LOCO_POP_IN = 165273641U;
         static const AkUniqueID PLAY_PLAYER_LOCO_POP_OUT = 2952227656U;
@@ -23,6 +24,22 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_VOCS_EDUDE_ONION = 2544220277U;
         static const AkUniqueID PLAY_PLAYER_VOCS_EDUDE_SIGHS = 3670755994U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace STATEGROUPMUSIC
+        {
+            static const AkUniqueID GROUP = 410841082U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INMENU = 3374585465U;
+                static const AkUniqueID LEVELSTART = 3372421815U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace STATEGROUPMUSIC
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

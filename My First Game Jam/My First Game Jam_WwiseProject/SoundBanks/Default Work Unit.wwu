@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Player" ID="{B90999B0-2277-4741-AE2F-147AB710BE94}" WorkUnitID="{B90999B0-2277-4741-AE2F-147AB710BE94}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerLocomotion" ID="{C616525A-F129-4975-A409-F11FF55ADF9A}" WorkUnitID="{C616525A-F129-4975-A409-F11FF55ADF9A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{8783C5C8-5BFD-4A4F-A0D6-E108EF8BD7B3}" WorkUnitID="{8783C5C8-5BFD-4A4F-A0D6-E108EF8BD7B3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

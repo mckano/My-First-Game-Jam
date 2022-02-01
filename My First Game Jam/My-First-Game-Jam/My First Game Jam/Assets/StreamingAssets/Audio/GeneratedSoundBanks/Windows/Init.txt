@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	410841082	StateGroupMusic			\Default Work Unit\StateGroupMusic	
+
+State	ID	Name	State Group			Notes
+	748895195	None	StateGroupMusic			
+	3372421815	LevelStart	StateGroupMusic			
+	3374585465	InMenu	StateGroupMusic			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	1073408537	WorldMaster			\Default Work Unit\Master Audio Bus\WorldMaster	
 	3199789248	MusicMaster			\Default Work Unit\Master Audio Bus\MusicMaster	
