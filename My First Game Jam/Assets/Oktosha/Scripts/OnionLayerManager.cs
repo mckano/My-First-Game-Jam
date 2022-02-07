@@ -30,22 +30,9 @@ public class OnionLayerManager : MonoBehaviour
     {
         if (numberOfLayers > 0)
         {
-            float radius = GetComponent<CircleCollider2D>().radius;
-            float innerRadius = layerStorage.onionPlayers[numberOfLayers - 1].GetComponent<CircleCollider2D>().radius;
-            Vector3 spawnPosition = transform.position + Vector3.up * (radius + innerRadius + epsilonForDetaching);
-            Collider2D overlap = Physics2D.OverlapCircle(spawnPosition, innerRadius);
-
-            if (overlap == null)
-            {
-                Instantiate(layerStorage.onionLayers[numberOfLayers], transform.position, Quaternion.identity);
-                Instantiate(layerStorage.onionPlayers[numberOfLayers - 1], spawnPosition, Quaternion.identity);
-                Destroy(gameObject);
-            }
-            else
-            {
-                GameObject overlapGameObject = overlap.gameObject;
-                Debug.Log("Can't detach layer, the " + overlapGameObject.name + " is in the way");
-            }
+            Instantiate(layerStorage.onionLayers[numberOfLayers], transform.position + Vector3.up * 2, Quaternion.identity);
+            Instantiate(layerStorage.onionPlayers[numberOfLayers - 1], transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 
@@ -84,10 +71,7 @@ public class OnionLayerManager : MonoBehaviour
 
     private bool IsLayerToAttachCloseEnough(GameObject layerToAttach)
     {
-        float distance = (transform.position - layerToAttach.transform.position).magnitude;
-        float radius = GetComponent<CircleCollider2D>().radius;
-        float layerToAttachRadius = layerToAttach.GetComponent<CircleCollider2D>().radius;
-        return distance < radius + layerToAttachRadius + epsilonForAttaching;
+        return Physics2D.Distance(GetComponent<Collider2D>(), layerToAttach.GetComponent<Collider2D>()).distance < epsilonForAttaching;
     }
 
 }
