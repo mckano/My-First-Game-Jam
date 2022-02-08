@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OnionLayerManager : MonoBehaviour
@@ -7,7 +5,6 @@ public class OnionLayerManager : MonoBehaviour
     public int numberOfLayers;
     private OnionLayerStorage layerStorage;
     private static float epsilonForAttaching = 0.1f;
-    private static float epsilonForDetaching = 0.1f;
 
     private void Start()
     {
