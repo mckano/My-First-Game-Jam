@@ -43,6 +43,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID RTPC_LAYERSPEED = 402709459U;
         static const AkUniqueID RTPC_NOISE = 3334042923U;
     } // namespace GAME_PARAMETERS
 
@@ -50,7 +51,6 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MAIN = 3161908922U;
-        static const AkUniqueID ZZOGGTEST = 3576371722U;
     } // namespace BANKS
 
     namespace BUSSES

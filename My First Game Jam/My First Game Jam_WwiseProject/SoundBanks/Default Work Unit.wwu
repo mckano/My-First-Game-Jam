@@ -12,11 +12,6 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="ZzoggTest" ID="{57D8D6D0-D215-43E7-9702-8F190E391129}">
-					<ObjectInclusionList/>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

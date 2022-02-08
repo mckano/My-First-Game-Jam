@@ -32,7 +32,9 @@ public class OnionLayerManager : MonoBehaviour
         {
             Instantiate(layerStorage.onionLayers[numberOfLayers], transform.position + Vector3.up * 2, Quaternion.identity);
             Instantiate(layerStorage.onionPlayers[numberOfLayers - 1], transform.position, Quaternion.identity);
+            AkSoundEngine.PostEvent("play_player_loco_pop_in", gameObject); //wwise
             Destroy(gameObject);
+
         }
     }
 
@@ -43,6 +45,7 @@ public class OnionLayerManager : MonoBehaviour
         {
             Instantiate(layerStorage.onionPlayers[numberOfLayers + 1], layerToAttach.transform.position, Quaternion.identity);
             Destroy(gameObject);
+            AkSoundEngine.PostEvent("play_player_loco_pop_out", gameObject);  //wwise
             Destroy(layerToAttach);
         }
     }

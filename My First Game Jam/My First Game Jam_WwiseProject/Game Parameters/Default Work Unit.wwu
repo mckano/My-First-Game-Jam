@@ -5,9 +5,10 @@
 			<ChildrenList>
 				<GameParameter Name="RTPC_Noise" ID="{9F725576-0841-4578-85D8-EED300B049C4}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="40"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="RTPC_LayerSpeed" ID="{EBBF6994-AF25-4C9D-8D11-5FF88A968BA7}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
