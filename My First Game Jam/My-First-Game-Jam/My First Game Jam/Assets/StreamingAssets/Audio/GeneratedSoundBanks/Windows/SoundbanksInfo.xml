@@ -25,13 +25,13 @@
 				<AuxBus Id="3786372668" Name="ReverbsMasterAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbsMasterAux"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1703489821">
+		<SoundBank Id="3161908922" Language="SFX" Hash="804712311">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3084600189" Name="play_onion_music" ObjectPath="\Events\Default Work Unit\play_onion_music" DurationType="Infinite"/>
-				<Event Id="2069093569" Name="play_player_loco_footsteps" ObjectPath="\Events\PlayerLocomotion\play_player_loco_footsteps" DurationType="OneShot" DurationMin="0.163229" DurationMax="0.183458">
+				<Event Id="3084600189" Name="play_onion_music" ObjectPath="\Events\Music\play_onion_music" DurationType="Infinite"/>
+				<Event Id="649430399" Name="play_player_loco_footsteps_material" ObjectPath="\Events\PlayerLocomotion\play_player_loco_footsteps_material" DurationType="OneShot" DurationMin="0.163229" DurationMax="0.183458">
 					<IncludedMemoryFiles>
 						<File Id="14969111" Language="SFX">
 							<ShortName>FOODIngr_Onion Tappin Hitting Footsteps Rustling 10_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</ShortName>
@@ -54,6 +54,18 @@
 							<Path>SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 03_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{87492B4F-6A57-4CF3-863B-AA39E058D10F}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{87492B4F-6A57-4CF3-863B-AA39E058D10F}">
+							<Media>
+								<File Id="14969111"/>
+								<File Id="114572221"/>
+								<File Id="124501231"/>
+								<File Id="291125973"/>
+								<File Id="514191022"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="165273641" Name="play_player_loco_pop_in" ObjectPath="\Events\PlayerLocomotion\play_player_loco_pop_in" DurationType="OneShot" DurationMin="0.070123" DurationMax="0.203568">
 					<IncludedMemoryFiles>
@@ -212,6 +224,13 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="3865314626" Name="Material" ObjectPath="\Switches\Default Work Unit\Material" GUID="{D2E9513F-5965-41B7-9577-FA8D5225A53C}">
+					<Switches>
+						<Switch Id="782826392" Name="default" ObjectPath="\Switches\Default Work Unit\Material\default" GUID="{87492B4F-6A57-4CF3-863B-AA39E058D10F}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

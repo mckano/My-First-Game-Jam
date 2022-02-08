@@ -14,7 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ONION_MUSIC = 3084600189U;
-        static const AkUniqueID PLAY_PLAYER_LOCO_FOOTSTEPS = 2069093569U;
+        static const AkUniqueID PLAY_PLAYER_LOCO_FOOTSTEPS_MATERIAL = 649430399U;
         static const AkUniqueID PLAY_PLAYER_LOCO_POP_IN = 165273641U;
         static const AkUniqueID PLAY_PLAYER_LOCO_POP_OUT = 2952227656U;
         static const AkUniqueID PLAY_PLAYER_LOCO_ROLLING_NOISE = 2206730916U;
@@ -40,6 +40,20 @@ namespace AK
         } // namespace STATEGROUPMUSIC
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace MATERIAL
+        {
+            static const AkUniqueID GROUP = 3865314626U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DEFAULT = 782826392U;
+            } // namespace SWITCH
+        } // namespace MATERIAL
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

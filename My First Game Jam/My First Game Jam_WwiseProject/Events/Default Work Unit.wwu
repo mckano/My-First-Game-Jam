@@ -29,17 +29,6 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_Test4" ID="{4E887422-F09A-4E60-A44D-44C3B6727BDD}"/>
-				<Event Name="play_onion_music" ID="{D56B90AD-25FC-44CB-A6C1-0ED02386DE50}">
-					<ChildrenList>
-						<Action Name="" ID="{B6638830-F091-47A0-8E7E-C65878077BBF}" ShortID="593533385">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="onion_music" ID="{E5C3BB80-0EFE-4881-84AB-488B1786791D}" WorkUnitID="{8783C5C8-5BFD-4A4F-A0D6-E108EF8BD7B3}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

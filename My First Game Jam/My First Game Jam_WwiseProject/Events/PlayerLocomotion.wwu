@@ -44,21 +44,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="play_player_loco_footsteps" ID="{AFD2162B-8A24-4555-8A22-889528201F84}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="4"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{E43AC9E2-2D74-4597-98BE-56DCBCF93A1C}" ShortID="942399484">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="player_loco_footsteps" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="play_player_loco_pop_in" ID="{CB3E711E-5ECA-4419-A65A-C31DD9A0310F}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="4"/>
@@ -84,6 +69,21 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="player_loco_pop out" ID="{95FBA9F8-8DA3-47D6-8206-164503AFBAD3}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_player_loco_footsteps_material" ID="{3238E9F2-5DA8-4D6C-BEE6-2AFFBC4B7999}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{65F0EFF7-0877-4240-BFA6-AE732A44B928}" ShortID="784816626">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_loco_footsteps_material" ID="{0EEDFA3B-5A26-45E2-9C6B-099395EB4A90}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
