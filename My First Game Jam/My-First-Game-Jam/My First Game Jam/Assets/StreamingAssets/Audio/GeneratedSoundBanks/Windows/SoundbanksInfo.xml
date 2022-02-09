@@ -16,7 +16,7 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3814029374">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1269548687">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -25,12 +25,37 @@
 				<AuxBus Id="3786372668" Name="ReverbsMasterAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbsMasterAux"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="804712311">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2809162973">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3084600189" Name="play_onion_music" ObjectPath="\Events\Music\play_onion_music" DurationType="Infinite"/>
+				<Event Id="3991942870" Name="music" ObjectPath="\Events\Music\music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3084600189" Name="play_onion_music" ObjectPath="\Events\Music\play_onion_music" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="976112377" Language="SFX">
+							<ShortName>Music\OnionIsland98bpm.wav</ShortName>
+							<Path>SFX\Music\OnionIsland98bpm_D79FB2B7.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{94755236-2D6D-4D4C-9D8E-09022202EF13}">
+							<Media>
+								<File Id="976112377"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{028691CD-40EF-4D02-B99C-0F453A2E05B6}">
+							<Media>
+								<File Id="976112377"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{022619E1-3346-4238-8807-3A176F23F555}">
+							<Media>
+								<File Id="976112377"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="649430399" Name="play_player_loco_footsteps_material" ObjectPath="\Events\PlayerLocomotion\play_player_loco_footsteps_material" DurationType="OneShot" DurationMin="0.163229" DurationMax="0.183458">
 					<IncludedMemoryFiles>
 						<File Id="14969111" Language="SFX">
@@ -208,10 +233,17 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3187507146" Name="Play_Test" ObjectPath="\Events\Default Work Unit\Play_Test" DurationType="OneShot" DurationMin="0.201000" DurationMax="0.201000"/>
+				<Event Id="3759155916" Name="Play_Test2" ObjectPath="\Events\Default Work Unit\Play_Test2" DurationType="OneShot" DurationMin="1.648027" DurationMax="1.648027">
+					<IncludedMemoryFiles>
+						<File Id="829094000" Language="SFX">
+							<ShortName>wasd_block_106_click+sine-2_m_p.wav</ShortName>
+							<Path>SFX\wasd_block_106_click+sine-2_m_p_B96106C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3759155914" Name="Play_Test4" ObjectPath="\Events\Default Work Unit\Play_Test4" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
-			<ReferencedStreamedFiles>
-				<File Id="976112377"/>
-			</ReferencedStreamedFiles>
 			<GameParameters>
 				<GameParameter Id="3334042923" Name="RTPC_Noise" ObjectPath="\Game Parameters\Default Work Unit\RTPC_Noise"/>
 			</GameParameters>

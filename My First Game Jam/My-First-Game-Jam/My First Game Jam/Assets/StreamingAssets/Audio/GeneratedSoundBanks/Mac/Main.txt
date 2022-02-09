@@ -7,8 +7,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	2544220277	play_player_vocs_edude_onion			\Player\play_player_vocs_edude_onion	
 	2952227656	play_player_loco_pop_out			\PlayerLocomotion\play_player_loco_pop_out	
 	3084600189	play_onion_music			\Music\play_onion_music	
+	3187507146	Play_Test			\Default Work Unit\Play_Test	
 	3670755994	play_player_vocs_edude_sighs			\Player\play_player_vocs_edude_sighs	
+	3759155914	Play_Test4			\Default Work Unit\Play_Test4	
+	3759155916	Play_Test2			\Default Work Unit\Play_Test2	
 	3809297239	play_player_vocs_edude_grunts			\Player\play_player_vocs_edude_grunts	
+	3991942870	music			\Music\music	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	3865314626	Material			\Default Work Unit\Material	
@@ -32,6 +36,7 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	224189034	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_rolling_synth\Wwise Tone Generator	
+	809201265	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Test\Wwise Sine	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	14969111	player_loco_footsteps_default_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\FOODIngr_Onion Tappin Hitting Footsteps Rustling 10_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\player_loco_footsteps_default_05		5349
@@ -59,6 +64,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	721512224	player_vocs_edude_laughts_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Laugh5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_05		5738
 	758101622	player_vocs_edude_laughts_04	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Laugh4_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_04		14463
 	796305672	player_vocs_edude_sighs_03	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Sigh3_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_sighs\player_vocs_edude_sighs_03		8982
+	829094000	Test2	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\wasd_block_106_click+sine-2_m_p_B96106C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test2		13120
 	871168759	player_vocs_edude_sighs_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Sigh5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_grunts\player_vocs_edude_sighs_05		3700
 	918185860	player_vocs_edude_onion_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_05		10338
 	973152087	player_vocs_edude_onion_04	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion4_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_04		11629
@@ -68,5 +74,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1065719921	player_vocs_edude_onion_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion2_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_02		7500
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	976112377	OnionIsland98bpm	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Music\OnionIsland98bpm_D79FB2B7.wem	976112377.wem	\Interactive Music Hierarchy\Default Work Unit\onion_music\onion_music_menu\onion_music_menu_part\OnionIsland98bpm	
+	976112377	OnionIsland98bpm	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Music\OnionIsland98bpm_D79FB2B7.wem	976112377.wem	\Interactive Music Hierarchy\Default Work Unit\onion_music\onion_music_main_theme\music_main_theme\OnionIsland98bpm	
 

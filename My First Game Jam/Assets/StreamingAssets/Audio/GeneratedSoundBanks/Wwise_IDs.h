@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAY_ONION_MUSIC = 3084600189U;
         static const AkUniqueID PLAY_PLAYER_LOCO_FOOTSTEPS_MATERIAL = 649430399U;
         static const AkUniqueID PLAY_PLAYER_LOCO_POP_IN = 165273641U;
@@ -23,6 +24,9 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_VOCS_EDUDE_LAUGHTS = 2506827726U;
         static const AkUniqueID PLAY_PLAYER_VOCS_EDUDE_ONION = 2544220277U;
         static const AkUniqueID PLAY_PLAYER_VOCS_EDUDE_SIGHS = 3670755994U;
+        static const AkUniqueID PLAY_TEST = 3187507146U;
+        static const AkUniqueID PLAY_TEST2 = 3759155916U;
+        static const AkUniqueID PLAY_TEST4 = 3759155914U;
     } // namespace EVENTS
 
     namespace STATES
