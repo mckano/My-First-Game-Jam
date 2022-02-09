@@ -270,52 +270,6 @@
 								<ActiveSource Name="Wwise Tone Generator" ID="{16D1FA84-CCE2-4B41-983A-276795D0F3CB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="player_loco_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" ShortID="910951822">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-100</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="onion_loco_rolling" ID="{8DB24A6D-F56E-4242-A3FB-055974885C2B}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Zzogg\locomotion\onion_loco_rolling.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1016039546"/>
-									</MediaIDList>
-								</AudioFileSource>
-								<AudioFileSource Name="onion_loco_rolling_eq" ID="{6DEDF956-A446-4314-88A2-65382A822E99}">
-									<Language>SFX</Language>
-									<AudioFile>Zzogg\locomotion\onion_loco_rolling_eq.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="885695421"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="onion_loco_rolling" ID="{8DB24A6D-F56E-4242-A3FB-055974885C2B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<RandomSequenceContainer Name="player_loco_pop in" ID="{2E83ABB0-7922-411B-883D-4D722520CEA4}" ShortID="144653914">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
@@ -729,6 +683,23 @@
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<SwitchContainer Name="player_loco_footsteps_material" ID="{0EEDFA3B-5A26-45E2-9C6B-099395EB4A90}" ShortID="278252154">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>33</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>38</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1225,6 +1196,20 @@
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="player_vocs_edude_grunts" ID="{437EE32A-F4CC-44B0-A2EE-B3857B1EC913}" ShortID="1010486993">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E540F9FD-C3C7-4B51-9BD0-0C8D08C88D6E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1234,214 +1219,34 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="player_vocs_edude_grunts_05" ID="{24F80576-B35A-4A6A-B49C-5D1180C192F2}" ShortID="579518958">
+								<Sound Name="player_vocs_edude_sighs_05" ID="{033D33D1-1518-4110-ABE0-F76FEDA9908A}" ShortID="188654092">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
+										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
-												<Value>False</Value>
+												<Value>21</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Grunt5" ID="{D2ED7416-752B-4FB8-B5F7-DCBA60C7B971}">
+										<AudioFileSource Name="Sigh5" ID="{2B48D033-8F22-400B-ADBB-FB0D2712BE7A}">
 											<Language>SFX</Language>
-											<AudioFile>Grunt5.wav</AudioFile>
+											<AudioFile>Sigh5.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="567380843"/>
+												<MediaID ID="871168759"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Grunt5" ID="{D2ED7416-752B-4FB8-B5F7-DCBA60C7B971}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="player_vocs_edude_grunts_07" ID="{B7CD56DF-BEC3-447E-A202-92AC76E03819}" ShortID="49028657">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Grunt7" ID="{1746BE4C-5C41-47B0-A51A-E4BF019CEF1C}">
-											<Language>SFX</Language>
-											<AudioFile>Grunt7.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="89811264"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Grunt7" ID="{1746BE4C-5C41-47B0-A51A-E4BF019CEF1C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="player_vocs_edude_grunts_09" ID="{F252CB58-1987-44A0-BB3A-92500A4C504B}" ShortID="238691111">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Grunt9" ID="{01598A46-46F7-4288-84E0-56ABF4D19761}">
-											<Language>SFX</Language>
-											<AudioFile>Grunt9.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="17405138"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Grunt9" ID="{01598A46-46F7-4288-84E0-56ABF4D19761}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="player_vocs_edude_grunts_08" ID="{B82013F7-6FC9-4AB1-BBD7-4F8153DBD99D}" ShortID="813756675">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Grunt8" ID="{278DE976-E27A-4AD7-9406-9035079E0EA9}">
-											<Language>SFX</Language>
-											<AudioFile>Grunt8.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1048937478"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Grunt8" ID="{278DE976-E27A-4AD7-9406-9035079E0EA9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="player_vocs_edude_grunts_02" ID="{B324AFFD-CCA3-48C1-A876-94EB6DAD85BF}" ShortID="297080467">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Grunt2" ID="{AC5627D3-F3E4-41A2-B077-4F7DB3CAD20E}">
-											<Language>SFX</Language>
-											<AudioFile>Grunt2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="43153528"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Grunt2" ID="{AC5627D3-F3E4-41A2-B077-4F7DB3CAD20E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="player_vocs_edude_grunts_04" ID="{C88D3F41-CBA3-4E1B-B5F0-9565F82CE225}" ShortID="420830534">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Grunt4" ID="{5642CF18-D57E-4AE8-BC2F-0929F6976DF5}">
-											<Language>SFX</Language>
-											<AudioFile>Grunt4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="470008800"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Grunt4" ID="{5642CF18-D57E-4AE8-BC2F-0929F6976DF5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="player_vocs_edude_grunts_03" ID="{A13C8022-20A7-4D08-8922-37FC58C069F2}" ShortID="446716698">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Grunt3" ID="{622B7C32-1AAF-4EF1-8DB3-B22376D37CC3}">
-											<Language>SFX</Language>
-											<AudioFile>Grunt3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="513294707"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Grunt3" ID="{622B7C32-1AAF-4EF1-8DB3-B22376D37CC3}" Platform="Linked"/>
+										<ActiveSource Name="Sigh5" ID="{2B48D033-8F22-400B-ADBB-FB0D2712BE7A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_vocs_edude_grunts_06" ID="{0DD68B2B-9E03-4520-9A1B-551E0BFB0C7E}" ShortID="286503636">
@@ -1454,7 +1259,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
@@ -1484,7 +1289,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
@@ -1504,7 +1309,14 @@
 										<ActiveSource Name="Grunt1" ID="{62C55276-9921-4194-9207-DAE788244547}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="player_vocs_edude_sighs_05" ID="{033D33D1-1518-4110-ABE0-F76FEDA9908A}" ShortID="188654092">
+								<Sound Name="player_vocs_edude_grunts_08" ID="{B82013F7-6FC9-4AB1-BBD7-4F8153DBD99D}" ShortID="813756675">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1514,23 +1326,218 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Sigh5" ID="{2B48D033-8F22-400B-ADBB-FB0D2712BE7A}">
+										<AudioFileSource Name="Grunt8" ID="{278DE976-E27A-4AD7-9406-9035079E0EA9}">
 											<Language>SFX</Language>
-											<AudioFile>Sigh5.wav</AudioFile>
+											<AudioFile>Grunt8.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="871168759"/>
+												<MediaID ID="1048937478"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Sigh5" ID="{2B48D033-8F22-400B-ADBB-FB0D2712BE7A}" Platform="Linked"/>
+										<ActiveSource Name="Grunt8" ID="{278DE976-E27A-4AD7-9406-9035079E0EA9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="player_vocs_edude_grunts_03" ID="{A13C8022-20A7-4D08-8922-37FC58C069F2}" ShortID="446716698">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grunt3" ID="{622B7C32-1AAF-4EF1-8DB3-B22376D37CC3}">
+											<Language>SFX</Language>
+											<AudioFile>Grunt3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="513294707"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grunt3" ID="{622B7C32-1AAF-4EF1-8DB3-B22376D37CC3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="player_vocs_edude_grunts_07" ID="{B7CD56DF-BEC3-447E-A202-92AC76E03819}" ShortID="49028657">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grunt7" ID="{1746BE4C-5C41-47B0-A51A-E4BF019CEF1C}">
+											<Language>SFX</Language>
+											<AudioFile>Grunt7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="89811264"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grunt7" ID="{1746BE4C-5C41-47B0-A51A-E4BF019CEF1C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="player_vocs_edude_grunts_09" ID="{F252CB58-1987-44A0-BB3A-92500A4C504B}" ShortID="238691111">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grunt9" ID="{01598A46-46F7-4288-84E0-56ABF4D19761}">
+											<Language>SFX</Language>
+											<AudioFile>Grunt9.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="17405138"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grunt9" ID="{01598A46-46F7-4288-84E0-56ABF4D19761}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="player_vocs_edude_grunts_02" ID="{B324AFFD-CCA3-48C1-A876-94EB6DAD85BF}" ShortID="297080467">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grunt2" ID="{AC5627D3-F3E4-41A2-B077-4F7DB3CAD20E}">
+											<Language>SFX</Language>
+											<AudioFile>Grunt2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="43153528"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grunt2" ID="{AC5627D3-F3E4-41A2-B077-4F7DB3CAD20E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="player_vocs_edude_grunts_05" ID="{24F80576-B35A-4A6A-B49C-5D1180C192F2}" ShortID="579518958">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grunt5" ID="{D2ED7416-752B-4FB8-B5F7-DCBA60C7B971}">
+											<Language>SFX</Language>
+											<AudioFile>Grunt5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="567380843"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grunt5" ID="{D2ED7416-752B-4FB8-B5F7-DCBA60C7B971}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="player_vocs_edude_grunts_04" ID="{C88D3F41-CBA3-4E1B-B5F0-9565F82CE225}" ShortID="420830534">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grunt4" ID="{5642CF18-D57E-4AE8-BC2F-0929F6976DF5}">
+											<Language>SFX</Language>
+											<AudioFile>Grunt4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="470008800"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grunt4" ID="{5642CF18-D57E-4AE8-BC2F-0929F6976DF5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="player_vocs_edude_sighs" ID="{D0D2EC14-4B1D-4A0F-A5A6-7BFFAC49A521}" ShortID="5767603">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2E9DCD3A-08A9-4BCE-8036-13F3F7AF0B4E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="177"/>
+													<Property Name="Min" Type="Real64" Value="-177"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1541,6 +1548,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="player_vocs_edude_sighs_01" ID="{1D26B682-01A5-4FC7-B6ED-DDBD104B70AA}" ShortID="963761050">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1564,6 +1578,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_vocs_edude_sighs_02" ID="{C531C47E-AC4C-4B68-A818-F2F3A9095E97}" ShortID="576866837">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1587,6 +1608,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_vocs_edude_sighs_03" ID="{164F2389-BE2A-4E06-907A-A05396E5FC14}" ShortID="18713924">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1610,6 +1638,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_vocs_edude_sighs_04" ID="{E9F6AB29-2D08-429C-9AFD-12CEB44BAA0F}" ShortID="633512921">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1633,6 +1668,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_vocs_edude_sighs_05" ID="{686D80CB-8507-4C7F-919D-EA046DB913C1}" ShortID="214534985">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>18</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1656,6 +1698,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="player_vocs_edude_sighs_06" ID="{CA7A3CFF-FB01-48A6-BAB2-AD90E8CF3B19}" ShortID="593161180">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
@@ -1832,6 +1881,174 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="player_layer" ID="{D8B9E37E-F72A-43FA-AEDC-F20CF9CA4004}" ShortID="566395528">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="10m_Attenuation" ID="{95F5348E-74DD-4841-B86B-13F9D996BEA5}" WorkUnitID="{946389B5-62C1-45BD-9DEF-3974A07036B6}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="player_layer_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" ShortID="910951822">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{4B380401-A1D6-4AA0-ABDF-F67B8824FA16}" ShortID="29158654">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="LFO_LayerSpeed" ID="{1681F58D-CC16-4E78-A279-B0DAB0FCD11F}" WorkUnitID="{EE3148DC-F040-4520-BEA3-4D40BA0892EA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2CDB1A79-AA14-49CB-9C29-A08B1AA0985E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-192</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{F1AE1D70-4E96-48CB-AD3F-B9D05E850D76}" ShortID="770122946">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RTPC_LayerSpeed" ID="{EBBF6994-AF25-4C9D-8D11-5FF88A968BA7}" WorkUnitID="{E27772BB-A52C-4A93-8B08-E11299E02C80}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C731C089-D7C7-4EB6-88F8-92BCFBA4A608}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-192</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>7.2439</XPos>
+														<YPos>-192</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>46.53061</XPos>
+														<YPos>-0.82295</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>400</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<Custom>
+										<Conversion Name="Conversion Settings (Custom)" ID="{F4CCAF62-F3F9-4826-B404-20E11B143ABA}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">4</Value>
+														<Value Platform="Windows">4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Mac">0</Value>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">0</Value>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">0</Value>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">44100</Value>
+														<Value Platform="Windows">44100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Mac">
+													<ConversionPlugin Name="" ID="{4E4DA706-ECCC-499B-BAE1-6EB029CBDB2D}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+														<PropertyList>
+															<Property Name="QualityFactor" Type="Real32" Value="7"/>
+														</PropertyList>
+													</ConversionPlugin>
+												</ConversionPluginInfo>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{C82493A2-0C35-415F-AF20-08C5A50D5C81}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+														<PropertyList>
+															<Property Name="QualityFactor" Type="Real32" Value="7"/>
+														</PropertyList>
+													</ConversionPlugin>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="onion_loco_rolling" ID="{8DB24A6D-F56E-4242-A3FB-055974885C2B}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Zzogg\locomotion\onion_loco_rolling.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1016039546"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="onion_loco_rolling_eq" ID="{6DEDF956-A446-4314-88A2-65382A822E99}">
+									<Language>SFX</Language>
+									<AudioFile>Zzogg\locomotion\onion_loco_rolling_eq.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="885695421"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="onion_loco_rolling" ID="{8DB24A6D-F56E-4242-A3FB-055974885C2B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

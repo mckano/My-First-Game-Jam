@@ -10,11 +10,14 @@ public class OnionLayer : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         AkSoundEngine.SetRTPCValue("RTPC_LayerSize", layerSize, gameObject); // wwise
+        //Debug.Log(layerSize);
+        AkSoundEngine.PostEvent("play_player_layer_rolling_onion", gameObject);
     }
 
     private void Update()
     {
         angularVelocity = rb.angularVelocity;
-        AkSoundEngine.SetRTPCValue("RTPC_LayerSpeed", rb.angularVelocity, gameObject); // wwise
+        AkSoundEngine.SetRTPCValue("RTPC_LayerSpeed", Mathf.Abs(angularVelocity), gameObject); // wwise
+        Debug.Log(Mathf.Abs(angularVelocity));
     }
 }

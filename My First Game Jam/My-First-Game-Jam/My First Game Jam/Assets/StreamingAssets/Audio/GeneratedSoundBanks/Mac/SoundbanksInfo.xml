@@ -16,7 +16,7 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3289683777">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4032942124">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -25,7 +25,7 @@
 				<AuxBus Id="3786372668" Name="ReverbsMasterAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbsMasterAux"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2809162973">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1403010852">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -55,6 +55,14 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="1935676819" Name="play_player_layer_rolling_onion" ObjectPath="\Events\PlayerLocomotion\play_player_layer_rolling_onion" MaxAttenuation="10.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1016039546" Language="SFX">
+							<ShortName>Zzogg\locomotion\onion_loco_rolling.wav</ShortName>
+							<Path>SFX\Zzogg\locomotion\onion_loco_rolling_C5579977.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="649430399" Name="play_player_loco_footsteps_material" ObjectPath="\Events\PlayerLocomotion\play_player_loco_footsteps_material" DurationType="OneShot" DurationMin="0.163229" DurationMax="0.183458">
 					<IncludedMemoryFiles>
@@ -117,15 +125,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2206730916" Name="play_player_loco_rolling_noise" ObjectPath="\Events\PlayerLocomotion\play_player_loco_rolling_noise" DurationType="Infinite"/>
-				<Event Id="688589301" Name="play_player_loco_rolling_onion" ObjectPath="\Events\PlayerLocomotion\play_player_loco_rolling_onion" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="1016039546" Language="SFX">
-							<ShortName>Zzogg\locomotion\onion_loco_rolling.wav</ShortName>
-							<Path>SFX\Zzogg\locomotion\onion_loco_rolling_40E76DEF.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3809297239" Name="play_player_vocs_edude_grunts" ObjectPath="\Events\Player\play_player_vocs_edude_grunts" DurationType="OneShot" DurationMin="0.240385" DurationMax="0.240385">
+				<Event Id="3809297239" Name="play_player_vocs_edude_grunts" ObjectPath="\Events\Player\play_player_vocs_edude_grunts" DurationType="OneShot" DurationMin="0.240385" DurationMax="0.240663">
 					<IncludedMemoryFiles>
 						<File Id="871168759" Language="SFX">
 							<ShortName>Sigh5.wav</ShortName>
@@ -205,31 +205,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3670755994" Name="play_player_vocs_edude_sighs" ObjectPath="\Events\Player\play_player_vocs_edude_sighs" DurationType="OneShot" DurationMin="0.240385" DurationMax="1.038458">
+				<Event Id="3670755994" Name="play_player_vocs_edude_sighs" ObjectPath="\Events\Player\play_player_vocs_edude_sighs" DurationType="OneShot" DurationMin="0.217023" DurationMax="0.266263">
 					<IncludedMemoryFiles>
-						<File Id="544747540" Language="SFX">
-							<ShortName>Sigh6.wav</ShortName>
-							<Path>SFX\Sigh6_A2BFDF47.wem</Path>
-						</File>
-						<File Id="655888127" Language="SFX">
-							<ShortName>Sigh2.wav</ShortName>
-							<Path>SFX\Sigh2_A2BFDF47.wem</Path>
-						</File>
-						<File Id="705689019" Language="SFX">
-							<ShortName>Sigh4.wav</ShortName>
-							<Path>SFX\Sigh4_A2BFDF47.wem</Path>
-						</File>
-						<File Id="796305672" Language="SFX">
-							<ShortName>Sigh3.wav</ShortName>
-							<Path>SFX\Sigh3_A2BFDF47.wem</Path>
-						</File>
 						<File Id="871168759" Language="SFX">
 							<ShortName>Sigh5.wav</ShortName>
 							<Path>SFX\Sigh5_A2BFDF47.wem</Path>
-						</File>
-						<File Id="1052377535" Language="SFX">
-							<ShortName>Sigh1.wav</ShortName>
-							<Path>SFX\Sigh1_A2BFDF47.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -245,6 +225,7 @@
 				<Event Id="3759155914" Name="Play_Test4" ObjectPath="\Events\Default Work Unit\Play_Test4" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>
+				<GameParameter Id="402709459" Name="RTPC_LayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\RTPC_LayerSpeed"/>
 				<GameParameter Id="3334042923" Name="RTPC_Noise" ObjectPath="\Game Parameters\Default Work Unit\RTPC_Noise"/>
 			</GameParameters>
 			<StateGroups>

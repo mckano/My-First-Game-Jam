@@ -10,6 +10,11 @@ public class LocomotionRun : MonoBehaviour
     {
         AkSoundEngine.PostEvent("play_player_loco_footsteps_material", gameObject);
 
+    }
+
+    void PlayerJumpSound()
+    {
+        AkSoundEngine.PostEvent("play_player_vocs_edude_sighs", gameObject);
 
     }
 

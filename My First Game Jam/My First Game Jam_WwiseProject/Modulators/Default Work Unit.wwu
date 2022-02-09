@@ -38,6 +38,38 @@
 						<Property Name="LfoWaveform" Type="int32" Value="1"/>
 					</PropertyList>
 				</ModulatorLfo>
+				<ModulatorLfo Name="LFO_LayerSpeed" ID="{1681F58D-CC16-4E78-A279-B0DAB0FCD11F}" ShortID="57226576">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="10">
+							<RTPCList>
+								<RTPC Name="" ID="{2CADBF6D-CC0B-41D2-887C-89A472E97C87}" ShortID="246284350">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="RTPC_LayerSpeed" ID="{EBBF6994-AF25-4C9D-8D11-5FF88A968BA7}" WorkUnitID="{E27772BB-A52C-4A93-8B08-E11299E02C80}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{9B4F0BCF-2B97-49FE-BDA9-C5C91EE07B81}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0.5</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>400</XPos>
+												<YPos>10</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</ModulatorLfo>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

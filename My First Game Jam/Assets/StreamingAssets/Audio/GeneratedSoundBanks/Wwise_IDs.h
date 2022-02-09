@@ -15,11 +15,11 @@ namespace AK
     {
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAY_ONION_MUSIC = 3084600189U;
+        static const AkUniqueID PLAY_PLAYER_LAYER_ROLLING_ONION = 1935676819U;
         static const AkUniqueID PLAY_PLAYER_LOCO_FOOTSTEPS_MATERIAL = 649430399U;
         static const AkUniqueID PLAY_PLAYER_LOCO_POP_IN = 165273641U;
         static const AkUniqueID PLAY_PLAYER_LOCO_POP_OUT = 2952227656U;
         static const AkUniqueID PLAY_PLAYER_LOCO_ROLLING_NOISE = 2206730916U;
-        static const AkUniqueID PLAY_PLAYER_LOCO_ROLLING_ONION = 688589301U;
         static const AkUniqueID PLAY_PLAYER_VOCS_EDUDE_GRUNTS = 3809297239U;
         static const AkUniqueID PLAY_PLAYER_VOCS_EDUDE_LAUGHTS = 2506827726U;
         static const AkUniqueID PLAY_PLAYER_VOCS_EDUDE_ONION = 2544220277U;

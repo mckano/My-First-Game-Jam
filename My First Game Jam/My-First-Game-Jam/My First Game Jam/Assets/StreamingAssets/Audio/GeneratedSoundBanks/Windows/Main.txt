@@ -1,7 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	165273641	play_player_loco_pop_in			\PlayerLocomotion\play_player_loco_pop_in	
 	649430399	play_player_loco_footsteps_material			\PlayerLocomotion\play_player_loco_footsteps_material	
-	688589301	play_player_loco_rolling_onion			\PlayerLocomotion\play_player_loco_rolling_onion	
+	1935676819	play_player_layer_rolling_onion			\PlayerLocomotion\play_player_layer_rolling_onion	
 	2206730916	play_player_loco_rolling_noise			\PlayerLocomotion\play_player_loco_rolling_noise	
 	2506827726	play_player_vocs_edude_laughts			\Player\play_player_vocs_edude_laughts	
 	2544220277	play_player_vocs_edude_onion			\Player\play_player_vocs_edude_onion	
@@ -29,9 +29,11 @@ State	ID	Name	State Group			Notes
 	3374585465	InMenu	StateGroupMusic			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	402709459	RTPC_LayerSpeed			\Default Work Unit\RTPC_LayerSpeed	
 	3334042923	RTPC_Noise			\Default Work Unit\RTPC_Noise	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
+	57226576	LFO_LayerSpeed			\Default Work Unit\LFO_LayerSpeed	
 	642706188	Noise Modulator LFO			\Default Work Unit\Noise Modulator LFO	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
@@ -55,22 +57,17 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	449957065	player_loco_pop in_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Zzogg\locomotion\player_loco_pop in_02_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_pop in\player_loco_pop in_02		2463
 	514191022	player_loco_footsteps_default_03	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 03_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\player_loco_footsteps_default_03		4850
 	529730406	player_vocs_edude_onion_03	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Onion3_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_03		8097
-	544747540	player_vocs_edude_sighs_06	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Sigh6_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_sighs\player_vocs_edude_sighs_06		10658
 	589217108	player_loco_pop in_01	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Zzogg\locomotion\player_loco_pop in_01_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_pop in\player_loco_pop in_01		1751
 	633496987	player_vocs_edude_onion_08	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Onion8_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_08		7420
-	655888127	player_vocs_edude_sighs_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Sigh2_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_sighs\player_vocs_edude_sighs_02		9442
 	661352392	player_vocs_edude_laughts_06	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Laugh6_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_06		19894
-	705689019	player_vocs_edude_sighs_04	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Sigh4_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_sighs\player_vocs_edude_sighs_04		8642
 	721512224	player_vocs_edude_laughts_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Laugh5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_05		5738
 	758101622	player_vocs_edude_laughts_04	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Laugh4_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_04		14463
-	796305672	player_vocs_edude_sighs_03	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Sigh3_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_sighs\player_vocs_edude_sighs_03		8982
 	829094000	Test2	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\wasd_block_106_click+sine-2_m_p_B96106C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test2		13120
 	871168759	player_vocs_edude_sighs_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Sigh5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_grunts\player_vocs_edude_sighs_05		3700
 	918185860	player_vocs_edude_onion_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Onion5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_05		10338
 	973152087	player_vocs_edude_onion_04	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Onion4_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_04		11629
-	1016039546	player_loco_rolling_onion	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Zzogg\locomotion\onion_loco_rolling_40E76DEF.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_rolling_onion		142038
+	1016039546	player_layer_rolling_onion	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Zzogg\locomotion\onion_loco_rolling_C5579977.wem		\Actor-Mixer Hierarchy\Player\player_layer\player_layer_rolling_onion		698340
 	1041873288	player_vocs_edude_laughts_03	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Laugh3_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_03		7842
-	1052377535	player_vocs_edude_sighs_01	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Sigh1_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_sighs\player_vocs_edude_sighs_01		13012
 	1065719921	player_vocs_edude_onion_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Windows\SFX\Onion2_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_02		7500
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes

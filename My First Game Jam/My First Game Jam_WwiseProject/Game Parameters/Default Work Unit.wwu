@@ -8,7 +8,14 @@
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="RTPC_LayerSpeed" ID="{EBBF6994-AF25-4C9D-8D11-5FF88A968BA7}"/>
+				<GameParameter Name="RTPC_LayerSpeed" ID="{EBBF6994-AF25-4C9D-8D11-5FF88A968BA7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="400"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="100"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

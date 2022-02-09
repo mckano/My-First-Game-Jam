@@ -18,16 +18,16 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="play_player_loco_rolling_onion" ID="{ED6F7EA9-2322-45D6-8B9B-6BF65D939CEF}">
+				<Event Name="play_player_layer_rolling_onion" ID="{ED6F7EA9-2322-45D6-8B9B-6BF65D939CEF}">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="Color" Type="int16" Value="21"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{1809CC88-BC73-418A-9974-1D708A70E45B}" ShortID="944519125">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="player_loco_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+									<ObjectRef Name="player_layer_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -38,7 +38,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="player_loco_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+									<ObjectRef Name="player_layer_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
