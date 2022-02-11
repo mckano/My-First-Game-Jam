@@ -683,29 +683,12 @@
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<SwitchContainer Name="player_loco_footsteps_material" ID="{0EEDFA3B-5A26-45E2-9C6B-099395EB4A90}" ShortID="278252154">
-							<PropertyList>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>33</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>38</Value>
-									</ValueList>
-								</Property>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="default" ID="{87492B4F-6A57-4CF3-863B-AA39E058D10F}" WorkUnitID="{E031663D-95CA-4122-9D56-4D7C40163637}"/>
+									<ObjectRef Name="default" ID="{2BE14AA2-774E-4548-B862-4C1D699C9A44}" WorkUnitID="{E031663D-95CA-4122-9D56-4D7C40163637}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
@@ -715,7 +698,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="player_loco_footsteps_material_default" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}" ShortID="215538117">
+								<RandomSequenceContainer Name="player_loco_footsteps_material_onion_layer" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}" ShortID="215538117">
 									<PropertyList>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
@@ -917,19 +900,514 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="player_loco_footsteps_material_metal" ID="{E0201C4D-FB47-4370-980C-E5193B3B94C8}" ShortID="252845951">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{9E078311-C0F2-4BBF-B4EA-A244C08FC7CB}" ShortID="43963437" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand2" Type="Real32" Value="9254"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="2220"/>
+														<Property Name="GainBand2" Type="Real32" Value="8"/>
+														<Property Name="GainBand3" Type="Real32" Value="6"/>
+														<Property Name="OnOffBand1" Type="bool" Value="False"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="metal-001" ID="{3EBA403F-6F2A-4E89-B97C-A1D949194FC1}" ShortID="117858459">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="metal-001" ID="{2A09BDB1-550B-4478-A902-7628AEBC5B20}">
+													<Language>SFX</Language>
+													<AudioFile>metal-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="181539103"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="metal-001" ID="{2A09BDB1-550B-4478-A902-7628AEBC5B20}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="metal-006" ID="{950F54C3-DEC1-435C-965C-022778D31090}" ShortID="1018634540">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="metal-006" ID="{39711986-9369-4AB1-86FC-DF5BD4C9D546}">
+													<Language>SFX</Language>
+													<AudioFile>metal-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="249712218"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="metal-006" ID="{39711986-9369-4AB1-86FC-DF5BD4C9D546}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="metal-007" ID="{DAF10738-E82B-4ADD-BDCF-8CCEB1965F63}" ShortID="392950639">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="metal-007" ID="{CA780B47-ED9D-40FB-86F9-95384A97129C}">
+													<Language>SFX</Language>
+													<AudioFile>metal-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="92747916"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="metal-007" ID="{CA780B47-ED9D-40FB-86F9-95384A97129C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="metal-008" ID="{E761D0D8-0A36-4CBB-8A3F-893D14ABC2C3}" ShortID="895637636">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="metal-008" ID="{8C0F0E8A-2E78-40E4-A52A-5FB5D15F8B03}">
+													<Language>SFX</Language>
+													<AudioFile>metal-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="770567100"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="metal-008" ID="{8C0F0E8A-2E78-40E4-A52A-5FB5D15F8B03}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="player_loco_footsteps_material_default" ID="{1317BB68-07CC-4A85-B48A-99C2512AFFDD}" ShortID="384408907">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="_onionStep-001" ID="{93813F34-E502-40F2-A5C1-80EF7DFB75C9}" ShortID="65598546">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-001" ID="{CC18DB02-AFF8-4906-B3A1-4540C2A2CAB2}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="123616817"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-001" ID="{CC18DB02-AFF8-4906-B3A1-4540C2A2CAB2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-002" ID="{F2879BA7-16DD-4BA0-B11A-0076228AF3F2}" ShortID="3630480">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-002" ID="{0E396408-5B9B-418D-B977-F5B950F935BB}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="81967354"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-002" ID="{0E396408-5B9B-418D-B977-F5B950F935BB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-003" ID="{5CBF2D3E-ECB5-41E9-A826-7773E66EFB54}" ShortID="998147054">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-003" ID="{39E370FB-B997-4CBD-B5B3-2BAC9F8C938D}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="563757395"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-003" ID="{39E370FB-B997-4CBD-B5B3-2BAC9F8C938D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-004" ID="{1768C8EB-A90F-4E80-952F-56323E35F32A}" ShortID="132514739">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-004" ID="{3472850D-C53D-45BA-A0D6-E19F30A06334}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="591345899"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-004" ID="{3472850D-C53D-45BA-A0D6-E19F30A06334}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-005" ID="{92039C7B-955F-4AEF-92D4-28C7D1923263}" ShortID="642523857">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-005" ID="{A73B27C4-C3B6-44E9-9AF1-175BC2B27D22}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1049629370"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-005" ID="{A73B27C4-C3B6-44E9-9AF1-175BC2B27D22}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-006" ID="{E0F1A787-DD1E-433F-ACE2-11A49AD88E95}" ShortID="256539674">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-006" ID="{4FAFD364-F0B1-4C45-AAE2-263CB45DEA83}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="944726411"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-006" ID="{4FAFD364-F0B1-4C45-AAE2-263CB45DEA83}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-007" ID="{C15B861F-2921-4877-B946-4332D1EAE268}" ShortID="162416878">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-007" ID="{DBBDAC8B-5597-4B9C-A6E1-3F5D97C48263}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="898770095"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-007" ID="{DBBDAC8B-5597-4B9C-A6E1-3F5D97C48263}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-008" ID="{E22D90E4-897F-453D-A152-063BBCFC8506}" ShortID="1067482305">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-008" ID="{ED34995D-516A-4A97-A4E3-6E130ABCB9B9}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="403220169"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-008" ID="{ED34995D-516A-4A97-A4E3-6E130ABCB9B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-009" ID="{3A2468AC-9181-46F5-9859-6D1DE7E1DD5D}" ShortID="227156991">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-009" ID="{848D895F-A696-4050-B64F-BBF513B7875A}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="68871643"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-009" ID="{848D895F-A696-4050-B64F-BBF513B7875A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-010" ID="{9B722478-22D1-463F-A4D8-2071442B9080}" ShortID="454111337">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-010" ID="{960656EF-132C-4481-801E-B3AD6E30E815}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-010.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="842647291"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-010" ID="{960656EF-132C-4481-801E-B3AD6E30E815}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-011" ID="{B39D615F-4B0A-46DD-8CF8-8BFAB63E7541}" ShortID="600551120">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-011" ID="{6507BC94-4DCE-4871-9020-ACB7E9E4B966}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-011.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="927165320"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-011" ID="{6507BC94-4DCE-4871-9020-ACB7E9E4B966}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_onionStep-012" ID="{55DECFB9-7F81-4BE5-831A-563F4BF9397C}" ShortID="522091492">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_onionStep-012" ID="{1C795F3C-4CA7-4DEA-A69F-19298415B3D8}">
+													<Language>SFX</Language>
+													<AudioFile>Zzogg\locomotion\footstep\_onionStep-012.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="416061176"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="_onionStep-012" ID="{1C795F3C-4CA7-4DEA-A69F-19298415B3D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="player_loco_footsteps_material_default" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}"/>
+										<ItemRef Name="player_loco_footsteps_material_metal" ID="{E0201C4D-FB47-4370-980C-E5193B3B94C8}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="player_loco_footsteps_material_default" ID="{1317BB68-07CC-4A85-B48A-99C2512AFFDD}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="player_loco_footsteps_material_onion_layer" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="default" ID="{87492B4F-6A57-4CF3-863B-AA39E058D10F}"/>
+										<SwitchRef Name="OnionLayer" ID="{87492B4F-6A57-4CF3-863B-AA39E058D10F}"/>
 										<ItemList>
-											<ItemRef Name="player_loco_footsteps_material_default" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}"/>
+											<ItemRef Name="player_loco_footsteps_material_onion_layer" ID="{FA3A3BD4-EF00-4097-AF8E-9CB1FB2CF1EF}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="metal" ID="{EAE04B87-0783-4B9C-927D-AC1D36067993}"/>
+										<ItemList>
+											<ItemRef Name="player_loco_footsteps_material_metal" ID="{E0201C4D-FB47-4370-980C-E5193B3B94C8}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="default" ID="{2BE14AA2-774E-4548-B862-4C1D699C9A44}"/>
+										<ItemList>
+											<ItemRef Name="player_loco_footsteps_material_default" ID="{1317BB68-07CC-4A85-B48A-99C2512AFFDD}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

@@ -41,7 +41,7 @@
 							<ChildrenList>
 								<MusicSegment Name="onion_music_menu_part" ID="{C13CC6BE-C3C5-492B-B06E-75A5EB24A4F9}" ShortID="915339876">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="148376.121193958"/>
+										<Property Name="EndPosition" Type="Real64" Value="39094.4905166608"/>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
 												<Value>2</Value>
@@ -85,10 +85,8 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<ReferenceList/>
 													<ChildrenList>
 														<MusicTransition Name="Transition" ID="{83E70795-9764-4251-B467-5265C84438CD}">
-															<ReferenceList/>
 															<TransitionInfo/>
 														</MusicTransition>
 													</ChildrenList>
@@ -208,10 +206,8 @@
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
-									<ReferenceList/>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{F58E20CA-6A19-4D01-8947-A2CB6887AB3A}">
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</ChildrenList>
@@ -248,7 +244,7 @@
 							<ChildrenList>
 								<MusicSegment Name="music_main_theme" ID="{61A028A3-2D57-4C93-B6B4-AD300F0697FA}" ShortID="176666095">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="173147.705088022"/>
+										<Property Name="EndPosition" Type="Real64" Value="100408.163265306"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -287,10 +283,8 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<ReferenceList/>
 													<ChildrenList>
 														<MusicTransition Name="Transition" ID="{3EBD0CA8-44EA-4D18-A5F7-75BD24A93A61}">
-															<ReferenceList/>
 															<TransitionInfo/>
 														</MusicTransition>
 													</ChildrenList>
@@ -411,10 +405,8 @@
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
-									<ReferenceList/>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{6A695414-6495-4629-88AB-8E9ABB2C303B}">
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</ChildrenList>
@@ -424,9 +416,13 @@
 							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{FB057B2B-8FE6-4C10-A435-50A1C424F069}" ShortID="186305012">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{E8B6B0DE-C092-424F-80D9-058394384B30}" ShortID="780379">
 											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
 											<SegmentRef Name="music_main_theme" ID="{61A028A3-2D57-4C93-B6B4-AD300F0697FA}"/>
@@ -441,7 +437,6 @@
 							<PropertyList>
 								<Property Name="IsFolder" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
 							<ChildrenList>
 								<MusicTransition Name="Transition" ID="{BA971413-99BD-4489-9A8F-E96C45A84026}">
 									<PropertyList>
@@ -449,7 +444,6 @@
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{DB984DE5-D55E-4330-ABBF-AA593CC46B27}">

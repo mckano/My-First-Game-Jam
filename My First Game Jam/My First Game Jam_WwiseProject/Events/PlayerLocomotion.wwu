@@ -20,7 +20,7 @@
 				</Event>
 				<Event Name="play_player_layer_rolling_onion" ID="{ED6F7EA9-2322-45D6-8B9B-6BF65D939CEF}">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="Color" Type="int16" Value="4"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -84,6 +84,24 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="player_loco_footsteps_material" ID="{0EEDFA3B-5A26-45E2-9C6B-099395EB4A90}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_player_layer_rolling_onion_stop" ID="{63992C0A-72F2-4AF6-AB15-D88225AEDEBC}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{BEC11895-B7D3-4BB0-8065-3A8C4F75D599}" ShortID="1041995669">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_layer_rolling_onion" ID="{8C27E8BB-387B-40A4-B4AC-F24359C8D794}" WorkUnitID="{DAFC6F10-844B-4C8C-AA54-E3065409F8C3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

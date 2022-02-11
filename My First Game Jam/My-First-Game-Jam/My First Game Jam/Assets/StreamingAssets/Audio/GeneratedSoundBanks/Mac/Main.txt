@@ -13,12 +13,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	3759155916	Play_Test2			\Default Work Unit\Play_Test2	
 	3809297239	play_player_vocs_edude_grunts			\Player\play_player_vocs_edude_grunts	
 	3991942870	music			\Music\music	
+	4136387678	play_player_layer_rolling_onion_stop			\PlayerLocomotion\play_player_layer_rolling_onion_stop	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	3865314626	Material			\Default Work Unit\Material	
 
 Switch	ID	Name	Switch Group			Notes
 	782826392	default	Material			
+	2473969246	metal	Material			
+	3624478683	OnionLayer	Material			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	410841082	StateGroupMusic			\Default Work Unit\StateGroupMusic	
@@ -36,18 +39,26 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	57226576	LFO_LayerSpeed			\Default Work Unit\LFO_LayerSpeed	
 	642706188	Noise Modulator LFO			\Default Work Unit\Noise Modulator LFO	
 
+Effect plug-ins	ID	Name	Type				Notes
+	43963437	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	224189034	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_rolling_synth\Wwise Tone Generator	
 	809201265	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Test\Wwise Sine	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	14969111	player_loco_footsteps_default_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\FOODIngr_Onion Tappin Hitting Footsteps Rustling 10_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\player_loco_footsteps_default_05		5349
+	14969111	player_loco_footsteps_default_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\FOODIngr_Onion Tappin Hitting Footsteps Rustling 10_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_onion_layer\player_loco_footsteps_default_05		5349
 	18426992	player_vocs_edude_laughts_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Laugh2_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_02		7116
 	78758183	player_loco_pop out_01	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\player_loco_pop out_01_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_pop out\player_loco_pop out_01		2046
-	114572221	player_loco_footsteps_default_01	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\FOODIngr_Onion Tappin Hitting Footsteps Rustling 08_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\player_loco_footsteps_default_01		4875
-	124501231	player_loco_footsteps_default_04	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 04_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\player_loco_footsteps_default_04		4617
+	81967354	_onionStep-002	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\footstep\_onionStep-002_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\_onionStep-002		2803
+	92747916	metal-007	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\metal-007_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_metal\metal-007		2096
+	114572221	player_loco_footsteps_default_01	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\FOODIngr_Onion Tappin Hitting Footsteps Rustling 08_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_onion_layer\player_loco_footsteps_default_01		4875
+	123616817	_onionStep-001	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\footstep\_onionStep-001_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\_onionStep-001		2429
+	124501231	player_loco_footsteps_default_04	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 04_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_onion_layer\player_loco_footsteps_default_04		4617
 	153829101	player_vocs_edude_onion_10	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion10_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_10		12552
-	291125973	player_loco_footsteps_default_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 02_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\player_loco_footsteps_default_02		4463
+	181539103	metal-001	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\metal-001_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_metal\metal-001		2348
+	249712218	metal-006	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\metal-006_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_metal\metal-006		1962
+	291125973	player_loco_footsteps_default_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 02_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_onion_layer\player_loco_footsteps_default_02		4463
 	297282353	player_vocs_edude_onion_01	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion1_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_01		6758
 	299665870	player_loco_pop out_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\player_loco_pop out_02_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_pop out\player_loco_pop out_02		2457
 	306539320	player_vocs_edude_onion_06	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion6_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_06		13370
@@ -55,19 +66,23 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	333436250	player_vocs_edude_laughts_01	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Laugh1_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_01		6713
 	370717345	player_vocs_edude_onion_09	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion9_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_09		15308
 	449957065	player_loco_pop in_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\player_loco_pop in_02_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_pop in\player_loco_pop in_02		2463
-	514191022	player_loco_footsteps_default_03	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 03_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\player_loco_footsteps_default_03		4850
+	514191022	player_loco_footsteps_default_03	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 03_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_onion_layer\player_loco_footsteps_default_03		4850
 	529730406	player_vocs_edude_onion_03	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion3_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_03		8097
+	563757395	_onionStep-003	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\footstep\_onionStep-003_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\_onionStep-003		2126
 	589217108	player_loco_pop in_01	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\player_loco_pop in_01_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_pop in\player_loco_pop in_01		1751
+	591345899	_onionStep-004	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\footstep\_onionStep-004_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\_onionStep-004		1836
 	633496987	player_vocs_edude_onion_08	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion8_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_08		7420
 	661352392	player_vocs_edude_laughts_06	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Laugh6_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_06		19894
 	721512224	player_vocs_edude_laughts_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Laugh5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_05		5738
 	758101622	player_vocs_edude_laughts_04	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Laugh4_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_04		14463
+	770567100	metal-008	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\metal-008_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_metal\metal-008		2316
 	829094000	Test2	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\wasd_block_106_click+sine-2_m_p_B96106C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test2		13120
-	871168759	player_vocs_edude_sighs_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Sigh5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_grunts\player_vocs_edude_sighs_05		3700
+	871168759	player_vocs_edude_sighs_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Sigh5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_sighs\player_vocs_edude_sighs_05		3700
 	918185860	player_vocs_edude_onion_05	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion5_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_05		10338
 	973152087	player_vocs_edude_onion_04	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion4_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_04		11629
 	1016039546	player_layer_rolling_onion	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\onion_loco_rolling_C5579977.wem		\Actor-Mixer Hierarchy\Player\player_layer\player_layer_rolling_onion		698340
 	1041873288	player_vocs_edude_laughts_03	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Laugh3_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_laughts\player_vocs_edude_laughts_03		7842
+	1049629370	_onionStep-005	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Zzogg\locomotion\footstep\_onionStep-005_7E846921.wem		\Actor-Mixer Hierarchy\Player\player_loco\player_loco_footsteps_material\player_loco_footsteps_material_default\_onionStep-005		1664
 	1065719921	player_vocs_edude_onion_02	C:\My-First-Game-Jam\My First Game Jam\My First Game Jam_WwiseProject\.cache\Mac\SFX\Onion2_A2BFDF47.wem		\Actor-Mixer Hierarchy\Player\player_vocs_edude\player_vocs_edude_onion\player_vocs_edude_onion_02		7500
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes

@@ -5,7 +5,9 @@
 			<ChildrenList>
 				<SwitchGroup Name="Material" ID="{D2E9513F-5965-41B7-9577-FA8D5225A53C}">
 					<ChildrenList>
-						<Switch Name="default" ID="{87492B4F-6A57-4CF3-863B-AA39E058D10F}"/>
+						<Switch Name="OnionLayer" ID="{87492B4F-6A57-4CF3-863B-AA39E058D10F}"/>
+						<Switch Name="default" ID="{2BE14AA2-774E-4548-B862-4C1D699C9A44}"/>
+						<Switch Name="metal" ID="{EAE04B87-0783-4B9C-927D-AC1D36067993}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

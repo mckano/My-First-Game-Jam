@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAY_ONION_MUSIC = 3084600189U;
         static const AkUniqueID PLAY_PLAYER_LAYER_ROLLING_ONION = 1935676819U;
+        static const AkUniqueID PLAY_PLAYER_LAYER_ROLLING_ONION_STOP = 4136387678U;
         static const AkUniqueID PLAY_PLAYER_LOCO_FOOTSTEPS_MATERIAL = 649430399U;
         static const AkUniqueID PLAY_PLAYER_LOCO_POP_IN = 165273641U;
         static const AkUniqueID PLAY_PLAYER_LOCO_POP_OUT = 2952227656U;
@@ -54,6 +55,8 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID DEFAULT = 782826392U;
+                static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID ONIONLAYER = 3624478683U;
             } // namespace SWITCH
         } // namespace MATERIAL
 

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - OnionLayer
+  - metal
+  - wood
+  - default_floor
   layers:
   - Default
   - TransparentFX
@@ -12,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - ground
   - 
   - 
   - 

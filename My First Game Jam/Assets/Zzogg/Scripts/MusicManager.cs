@@ -4,16 +4,29 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    [SerializeField]
-    AK.Wwise.Event _myEvent;
+    public static MusicManager instance; // Экземпляр объекта
 
-    // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
-        //AkSoundEngine.PostEvent("play_onion_music_01", gameObject);
-        _myEvent.Post(gameObject);
+      
+        // Теперь, проверяем существование экземпляра
+        if (instance != null)
+        {
+            Destroy(gameObject);
+           
+        }
+        else
+        {
+           
+            instance = this;
+            DontDestroyOnLoad(transform.gameObject);
+
+        }
+      
+
+
     }
 
-
+    
 }

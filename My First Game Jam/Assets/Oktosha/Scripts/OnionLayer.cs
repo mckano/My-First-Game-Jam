@@ -14,10 +14,16 @@ public class OnionLayer : MonoBehaviour
         AkSoundEngine.PostEvent("play_player_layer_rolling_onion", gameObject);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         angularVelocity = rb.angularVelocity;
         AkSoundEngine.SetRTPCValue("RTPC_LayerSpeed", Mathf.Abs(angularVelocity), gameObject); // wwise
-        Debug.Log(Mathf.Abs(angularVelocity));
+        //Debug.Log(Mathf.Abs(angularVelocity));
+    }
+
+
+    private void OnDestroy()
+    {
+        AkSoundEngine.PostEvent("play_player_layer_rolling_onion_stop", gameObject);
     }
 }

@@ -16,7 +16,7 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4032942124">
+		<SoundBank Id="1355168291" Language="SFX" Hash="863070705">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -25,7 +25,7 @@
 				<AuxBus Id="3786372668" Name="ReverbsMasterAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbsMasterAux"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1403010852">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1099150900">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -64,19 +64,40 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="649430399" Name="play_player_loco_footsteps_material" ObjectPath="\Events\PlayerLocomotion\play_player_loco_footsteps_material" DurationType="OneShot" DurationMin="0.163229" DurationMax="0.183458">
+				<Event Id="4136387678" Name="play_player_layer_rolling_onion_stop" ObjectPath="\Events\PlayerLocomotion\play_player_layer_rolling_onion_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="649430399" Name="play_player_loco_footsteps_material" ObjectPath="\Events\PlayerLocomotion\play_player_loco_footsteps_material" DurationType="OneShot" DurationMin="0.085365" DurationMax="0.183458">
 					<IncludedMemoryFiles>
 						<File Id="14969111" Language="SFX">
 							<ShortName>FOODIngr_Onion Tappin Hitting Footsteps Rustling 10_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</ShortName>
 							<Path>SFX\FOODIngr_Onion Tappin Hitting Footsteps Rustling 10_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem</Path>
 						</File>
+						<File Id="81967354" Language="SFX">
+							<ShortName>Zzogg\locomotion\footstep\_onionStep-002.wav</ShortName>
+							<Path>SFX\Zzogg\locomotion\footstep\_onionStep-002_7E846921.wem</Path>
+						</File>
+						<File Id="92747916" Language="SFX">
+							<ShortName>metal-007.wav</ShortName>
+							<Path>SFX\metal-007_7E846921.wem</Path>
+						</File>
 						<File Id="114572221" Language="SFX">
 							<ShortName>FOODIngr_Onion Tappin Hitting Footsteps Rustling 08_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</ShortName>
 							<Path>SFX\FOODIngr_Onion Tappin Hitting Footsteps Rustling 08_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem</Path>
 						</File>
+						<File Id="123616817" Language="SFX">
+							<ShortName>Zzogg\locomotion\footstep\_onionStep-001.wav</ShortName>
+							<Path>SFX\Zzogg\locomotion\footstep\_onionStep-001_7E846921.wem</Path>
+						</File>
 						<File Id="124501231" Language="SFX">
 							<ShortName>Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 04_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</ShortName>
 							<Path>SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 04_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem</Path>
+						</File>
+						<File Id="181539103" Language="SFX">
+							<ShortName>metal-001.wav</ShortName>
+							<Path>SFX\metal-001_7E846921.wem</Path>
+						</File>
+						<File Id="249712218" Language="SFX">
+							<ShortName>metal-006.wav</ShortName>
+							<Path>SFX\metal-006_7E846921.wem</Path>
 						</File>
 						<File Id="291125973" Language="SFX">
 							<ShortName>Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 02_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</ShortName>
@@ -86,8 +107,24 @@
 							<ShortName>Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 03_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono.wav</ShortName>
 							<Path>SFX\Zzogg\locomotion\FOODIngr_Onion Tappin Hitting Footsteps Rustling 03_ZZOGG_NONE_Tascam DR100 mkIII USI pro Mono_7E846921.wem</Path>
 						</File>
+						<File Id="563757395" Language="SFX">
+							<ShortName>Zzogg\locomotion\footstep\_onionStep-003.wav</ShortName>
+							<Path>SFX\Zzogg\locomotion\footstep\_onionStep-003_7E846921.wem</Path>
+						</File>
+						<File Id="591345899" Language="SFX">
+							<ShortName>Zzogg\locomotion\footstep\_onionStep-004.wav</ShortName>
+							<Path>SFX\Zzogg\locomotion\footstep\_onionStep-004_7E846921.wem</Path>
+						</File>
+						<File Id="770567100" Language="SFX">
+							<ShortName>metal-008.wav</ShortName>
+							<Path>SFX\metal-008_7E846921.wem</Path>
+						</File>
+						<File Id="1049629370" Language="SFX">
+							<ShortName>Zzogg\locomotion\footstep\_onionStep-005.wav</ShortName>
+							<Path>SFX\Zzogg\locomotion\footstep\_onionStep-005_7E846921.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{87492B4F-6A57-4CF3-863B-AA39E058D10F}</DefaultSwitchValue>
+					<DefaultSwitchValue>{2BE14AA2-774E-4548-B862-4C1D699C9A44}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{87492B4F-6A57-4CF3-863B-AA39E058D10F}">
 							<Media>
@@ -96,6 +133,23 @@
 								<File Id="124501231"/>
 								<File Id="291125973"/>
 								<File Id="514191022"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EAE04B87-0783-4B9C-927D-AC1D36067993}">
+							<Media>
+								<File Id="92747916"/>
+								<File Id="181539103"/>
+								<File Id="249712218"/>
+								<File Id="770567100"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2BE14AA2-774E-4548-B862-4C1D699C9A44}">
+							<Media>
+								<File Id="81967354"/>
+								<File Id="123616817"/>
+								<File Id="563757395"/>
+								<File Id="591345899"/>
+								<File Id="1049629370"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -240,7 +294,9 @@
 			<SwitchGroups>
 				<SwitchGroup Id="3865314626" Name="Material" ObjectPath="\Switches\Default Work Unit\Material" GUID="{D2E9513F-5965-41B7-9577-FA8D5225A53C}">
 					<Switches>
-						<Switch Id="782826392" Name="default" ObjectPath="\Switches\Default Work Unit\Material\default" GUID="{87492B4F-6A57-4CF3-863B-AA39E058D10F}"/>
+						<Switch Id="3624478683" Name="OnionLayer" ObjectPath="\Switches\Default Work Unit\Material\OnionLayer" GUID="{87492B4F-6A57-4CF3-863B-AA39E058D10F}"/>
+						<Switch Id="782826392" Name="default" ObjectPath="\Switches\Default Work Unit\Material\default" GUID="{2BE14AA2-774E-4548-B862-4C1D699C9A44}"/>
+						<Switch Id="2473969246" Name="metal" ObjectPath="\Switches\Default Work Unit\Material\metal" GUID="{EAE04B87-0783-4B9C-927D-AC1D36067993}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
