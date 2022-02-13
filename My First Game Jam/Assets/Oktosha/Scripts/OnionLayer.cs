@@ -17,7 +17,7 @@ public class OnionLayer : MonoBehaviour
     private void FixedUpdate()
     {
         angularVelocity = rb.angularVelocity;
-        AkSoundEngine.SetRTPCValue("RTPC_LayerSpeed", Mathf.Abs(angularVelocity), gameObject); // wwise
+        AkSoundEngine.SetRTPCValue("RTPC_LayerSpeed", Mathf.Abs(angularVelocity), gameObject);  // wwise
         //Debug.Log(Mathf.Abs(angularVelocity));
     }
 

@@ -1029,6 +1029,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="player_loco_footsteps_material_default" ID="{1317BB68-07CC-4A85-B48A-99C2512AFFDD}" ShortID="384408907">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>33</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>15</Value>
@@ -1036,7 +1041,7 @@
 										</Property>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1704,6 +1709,11 @@
 												<Value>21</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2002,6 +2012,8 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="player_vocs_edude_sighs" ID="{D0D2EC14-4B1D-4A0F-A5A6-7BFFAC49A521}" ShortID="5767603">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -2145,36 +2157,6 @@
 										<ActiveSource Name="Sigh4" ID="{6392E33F-2B78-4419-BB5B-13ED92F7E8CA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="player_vocs_edude_sighs_05" ID="{686D80CB-8507-4C7F-919D-EA046DB913C1}" ShortID="214534985">
-									<PropertyList>
-										<Property Name="MakeUpGain" Type="Real64">
-											<ValueList>
-												<Value>18</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Sigh5" ID="{467DD6A8-ED1D-4FB0-9CA4-C852FE2F8412}">
-											<Language>SFX</Language>
-											<AudioFile>Sigh5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="871168759"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Sigh5" ID="{467DD6A8-ED1D-4FB0-9CA4-C852FE2F8412}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="player_vocs_edude_sighs_06" ID="{CA7A3CFF-FB01-48A6-BAB2-AD90E8CF3B19}" ShortID="593161180">
 									<PropertyList>
 										<Property Name="Inclusion" Type="bool">
@@ -2203,6 +2185,393 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="Sigh6" ID="{D94C5BC5-2E8E-432B-AFC3-F70A869D8D7B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="player_vocs_edude_sighs_jumps" ID="{BC0BDFE8-8DAF-4577-BCA0-3BCCAAEBC7B4}" ShortID="904654476">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="player_vocs_edude_onion_01" ID="{B5F77A0E-A717-48C5-B02F-381B6E344492}" ShortID="1013933096">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion1" ID="{BCA8C2E3-8BE7-44A8-8516-F82F67FB6D1E}">
+													<Language>SFX</Language>
+													<AudioFile>Onion1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="297282353"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion1" ID="{BCA8C2E3-8BE7-44A8-8516-F82F67FB6D1E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="player_vocs_edude_onion_02" ID="{86E458C9-063C-4F5F-9EB9-5EF49925B5B9}" ShortID="206759290">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion2" ID="{8C1EECEB-61B6-478F-8BD6-D39AC9633596}">
+													<Language>SFX</Language>
+													<AudioFile>Onion2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1065719921"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion2" ID="{8C1EECEB-61B6-478F-8BD6-D39AC9633596}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="player_vocs_edude_onion_03" ID="{9152737D-E009-4B96-BA24-8010F329F720}" ShortID="458875803">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion3" ID="{212BB4CC-2492-46F8-9BF6-E3A91D7F11C5}">
+													<Language>SFX</Language>
+													<AudioFile>Onion3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="529730406"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion3" ID="{212BB4CC-2492-46F8-9BF6-E3A91D7F11C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="player_vocs_edude_onion_04" ID="{AAEB9514-0FA8-43AD-8BDE-38328CAFA507}" ShortID="806745172">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion4" ID="{4B847529-A62D-479B-B1E4-1378D36A2CF6}">
+													<Language>SFX</Language>
+													<AudioFile>Onion4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="973152087"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion4" ID="{4B847529-A62D-479B-B1E4-1378D36A2CF6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="player_vocs_edude_onion_05" ID="{152C2CA6-0705-4515-86AB-F4B1025CE59A}" ShortID="1065328347">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion5" ID="{546560BB-6DB8-408B-A023-579DE3F32630}">
+													<Language>SFX</Language>
+													<AudioFile>Onion5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918185860"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion5" ID="{546560BB-6DB8-408B-A023-579DE3F32630}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="player_vocs_edude_onion_06" ID="{87230E22-DBA7-49BF-9AB9-86E456E65A20}" ShortID="97061295">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion6" ID="{89D565BC-5ABF-491E-8E5C-858499D3798F}">
+													<Language>SFX</Language>
+													<AudioFile>Onion6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="306539320"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion6" ID="{89D565BC-5ABF-491E-8E5C-858499D3798F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="player_vocs_edude_onion_07" ID="{C31B5EFA-CEDC-4CA4-BF3D-80911E960D65}" ShortID="497578414">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion7" ID="{75955D16-1164-4676-A780-6CF411C92372}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.20653091684435"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Onion7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="861839981"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion7" ID="{75955D16-1164-4676-A780-6CF411C92372}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="player_vocs_edude_onion_08" ID="{DF0F15D1-22D0-4F83-843F-03586FC5A7AF}" ShortID="671149157">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion8" ID="{614839DB-6728-4FB4-9DCF-8F244908F840}">
+													<Language>SFX</Language>
+													<AudioFile>Onion8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="633496987"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion8" ID="{614839DB-6728-4FB4-9DCF-8F244908F840}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="player_vocs_edude_onion_09" ID="{A3BF19EB-45B9-4EB2-81CE-3F95B388E08B}" ShortID="745217337">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion9" ID="{3CCF715E-B9B5-41C2-8A9F-D84FD43415B4}">
+													<Language>SFX</Language>
+													<AudioFile>Onion9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="370717345"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion9" ID="{3CCF715E-B9B5-41C2-8A9F-D84FD43415B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="player_vocs_edude_onion_10" ID="{B6E51039-7237-481B-AE11-E4428EF41F54}" ShortID="570549357">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Onion10" ID="{B9D2EE38-A259-4C14-B864-AA2D32FBCC11}">
+													<Language>SFX</Language>
+													<AudioFile>Onion10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="153829101"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Onion10" ID="{B9D2EE38-A259-4C14-B864-AA2D32FBCC11}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<Sound Name="player_vocs_edude_sighs_oh" ID="{3744E4F6-8A4B-41B4-99C4-BE2F0A065C2C}" ShortID="323546306">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>18</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sigh5" ID="{E4CF075F-5AFE-45A0-A66A-022468EA2A56}">
+											<Language>SFX</Language>
+											<AudioFile>Sigh5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="871168759"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Sigh5" ID="{E4CF075F-5AFE-45A0-A66A-022468EA2A56}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="player_vocs_edude_sighs_oh_01" ID="{D8D815E3-650D-4CE6-97A5-5B492F1A9F43}" ShortID="849342937">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>18</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="edude Conversion Settings" ID="{CB27F77F-0424-4360-81C7-44411C3A68F0}" WorkUnitID="{5F914C14-AA9B-4D24-B65B-37EA6ECA14B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{852DC461-EB46-408D-8337-BCFE97D63FF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sigh5" ID="{AE6A9A27-A51F-42FD-8968-02B37564DC99}">
+											<Language>SFX</Language>
+											<AudioFile>Sigh5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="871168759"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Sigh5" ID="{AE6A9A27-A51F-42FD-8968-02B37564DC99}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

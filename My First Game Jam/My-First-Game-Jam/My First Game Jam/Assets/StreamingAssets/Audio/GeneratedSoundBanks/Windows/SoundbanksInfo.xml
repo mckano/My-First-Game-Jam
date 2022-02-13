@@ -25,7 +25,7 @@
 				<AuxBus Id="3786372668" Name="ReverbsMasterAux" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbsMasterAux"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1099150900">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4124213543">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -259,11 +259,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3670755994" Name="play_player_vocs_edude_sighs" ObjectPath="\Events\Player\play_player_vocs_edude_sighs" DurationType="OneShot" DurationMin="0.217023" DurationMax="0.266263">
+				<Event Id="3670755994" Name="play_player_vocs_edude_sighs" ObjectPath="\Events\Player\play_player_vocs_edude_sighs" DurationType="OneShot" DurationMin="0.217023" DurationMax="1.310014">
 					<IncludedMemoryFiles>
+						<File Id="297282353" Language="SFX">
+							<ShortName>Onion1.wav</ShortName>
+							<Path>SFX\Onion1_A2BFDF47.wem</Path>
+						</File>
+						<File Id="370717345" Language="SFX">
+							<ShortName>Onion9.wav</ShortName>
+							<Path>SFX\Onion9_A2BFDF47.wem</Path>
+						</File>
+						<File Id="861839981" Language="SFX">
+							<ShortName>Onion7.wav</ShortName>
+							<Path>SFX\Onion7_A6C920BD.wem</Path>
+						</File>
 						<File Id="871168759" Language="SFX">
 							<ShortName>Sigh5.wav</ShortName>
 							<Path>SFX\Sigh5_A2BFDF47.wem</Path>
+						</File>
+						<File Id="973152087" Language="SFX">
+							<ShortName>Onion4.wav</ShortName>
+							<Path>SFX\Onion4_A2BFDF47.wem</Path>
+						</File>
+						<File Id="1065719921" Language="SFX">
+							<ShortName>Onion2.wav</ShortName>
+							<Path>SFX\Onion2_A2BFDF47.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

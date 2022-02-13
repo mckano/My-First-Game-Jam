@@ -6,15 +6,18 @@ public class LocomotionRun : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     public Collider2D myCollider;
-
+    string myTag;
     void PlayerRunSound()
     {
-        RaycastHit2D hitObject = MaterialChecker();
-        if (hitObject.collider.tag != null)
+        if (myTag != MaterialChecker())
         {
-            AkSoundEngine.SetSwitch("Material", hitObject.collider.tag, gameObject);
+            myTag = MaterialChecker();
+            AkSoundEngine.SetSwitch("Material", myTag, gameObject);
+        }
+        if (myTag != null)
+        {
             AkSoundEngine.PostEvent("play_player_loco_footsteps_material", gameObject);
-            Debug.Log(hitObject.collider.tag); //Debug.DrawRay(transform.position, Vector2.down, Color.green, 1);
+           // Debug.Log(hitObject.collider.tag); //Debug.DrawRay(transform.position, Vector2.down, Color.green, 1);
         }
 
         else
@@ -31,12 +34,16 @@ public class LocomotionRun : MonoBehaviour
 
     void PlayerLandingSound() 
     {
-        RaycastHit2D hitObject = MaterialChecker();
-        if (hitObject.collider.tag != null)
+        if (myTag != MaterialChecker())
         {
-            AkSoundEngine.SetSwitch("Material", hitObject.collider.tag, gameObject);
+            myTag = MaterialChecker();
+            AkSoundEngine.SetSwitch("Material", myTag, gameObject);
+        }
+
+        if (myTag != null)
+        {
             AkSoundEngine.PostEvent("play_player_loco_footsteps_material", gameObject);
-            Debug.Log(hitObject.collider.tag); //Debug.DrawRay(transform.position, Vector2.down, Color.green, 1);
+           // Debug.Log(hitObject.collider.tag); //Debug.DrawRay(transform.position, Vector2.down, Color.green, 1);
         }
 
         else
@@ -46,11 +53,11 @@ public class LocomotionRun : MonoBehaviour
 
     }
 
-    RaycastHit2D MaterialChecker()
+    string MaterialChecker()
     {
         Vector3 legsCenterPosition = new Vector3(myCollider.bounds.center.x, myCollider.bounds.min.y, myCollider.bounds.center.z);
-        RaycastHit2D hitObject = Physics2D.Raycast(legsCenterPosition + Vector3.down * 0.1f, Vector2.down, 0.1f);
-        return hitObject;
+        RaycastHit2D hitObject = Physics2D.Raycast(legsCenterPosition + Vector3.down * 0.1f, Vector2.down, 0.3f);
+        return hitObject.collider.tag;
 
     }
 

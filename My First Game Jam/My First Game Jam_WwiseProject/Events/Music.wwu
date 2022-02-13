@@ -10,6 +10,10 @@
 					</PropertyList>
 				</Event>
 				<Event Name="play_onion_music" ID="{D56B90AD-25FC-44CB-A6C1-0ED02386DE50}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{B6638830-F091-47A0-8E7E-C65878077BBF}" ShortID="593533385">
 							<ReferenceList>
