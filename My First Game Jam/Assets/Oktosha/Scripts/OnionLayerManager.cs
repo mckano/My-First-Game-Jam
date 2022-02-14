@@ -25,10 +25,10 @@ public class OnionLayerManager : MonoBehaviour
 
     private void AttemptDetach()
     {
-        if (numberOfLayers > 0)
+        if (numberOfLayers > 0) // TODO: check that there are no obstacles
         {
-            Instantiate(layerStorage.onionLayers[numberOfLayers], transform.position + Vector3.up * 2, Quaternion.identity);
-            Instantiate(layerStorage.onionPlayers[numberOfLayers - 1], transform.position, Quaternion.identity);
+            Instantiate(layerStorage.onionLayers[numberOfLayers], transform.position, Quaternion.identity);
+            Instantiate(layerStorage.onionPlayers[numberOfLayers - 1], transform.position + Vector3.up * 2, Quaternion.identity);
             AkSoundEngine.PostEvent("play_player_loco_pop_in", gameObject); //wwise
             Destroy(gameObject);
 
@@ -38,7 +38,7 @@ public class OnionLayerManager : MonoBehaviour
     private void AttemptAttach()
     {
         GameObject layerToAttach = FindNearestEligibleLayer();
-        if (layerToAttach != null && IsLayerToAttachCloseEnough(layerToAttach))
+        if (layerToAttach != null && IsLayerToAttachCloseEnough(layerToAttach)) // TODO: check that there are no obstacles
         {
             Instantiate(layerStorage.onionPlayers[numberOfLayers + 1], layerToAttach.transform.position, Quaternion.identity);
             Destroy(gameObject);
