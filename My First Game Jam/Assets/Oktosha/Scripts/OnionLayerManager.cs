@@ -5,6 +5,7 @@ public class OnionLayerManager : MonoBehaviour
     public int numberOfLayers;
     private OnionLayerStorage layerStorage;
     private static float epsilonForAttaching = 0.1f;
+    public bool isListeningInput = true;
 
     private void Start()
     {
@@ -13,13 +14,15 @@ public class OnionLayerManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            AttemptDetach();
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            AttemptAttach();
+        if (isListeningInput) { 
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                AttemptDetach();
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                AttemptAttach();
+            }
         }
     }
 

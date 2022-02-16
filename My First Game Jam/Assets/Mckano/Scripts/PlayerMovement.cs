@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed;
     public float jumpForce;
 
+    public bool isListeningInput = true;
+
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -28,13 +30,13 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Here we account for left/right movement
-        float speedX = Input.GetAxisRaw("Horizontal") * Time.deltaTime;
+        float speedX = isListeningInput ? Input.GetAxisRaw("Horizontal") * Time.deltaTime : 0;
         myRigidbody.velocity = new Vector2(speedX * movementSpeed, myRigidbody.velocity.y);
 
-        // This boolean is accounted for in the switch between idle and running
+        // This boolean is responsible for in the switch between idle and running
         meshAnimator.SetBool("isMovementSpeed", Mathf.Abs(speedX) > 0);
 
-        // Rotate the player in the direction it's facing
+        // Rotate the player in the direction it's going
         if (speedX > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
@@ -48,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         meshAnimator.SetBool("isGrounded", IsGrounded());
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() && !isTakeOff)
+        if (isListeningInput && Input.GetKeyDown(KeyCode.Space) && IsGrounded() && !isTakeOff)
         {
             isTakeOff = true;
             meshAnimator.SetBool("isTakeOff", isTakeOff);

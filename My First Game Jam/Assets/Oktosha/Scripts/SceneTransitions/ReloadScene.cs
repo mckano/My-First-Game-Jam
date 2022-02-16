@@ -3,9 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class ReloadScene : MonoBehaviour
 {
+    public bool isListeningInput = true;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (isListeningInput && Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

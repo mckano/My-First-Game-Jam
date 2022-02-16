@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 300
   jumpForce: 250
+  isListeningInput: 1
 --- !u!70 &847269174706409140
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfLayers: 3
+  isListeningInput: 1
 --- !u!1001 &847269175363222848
 PrefabInstance:
   m_ObjectHideFlags: 0
